@@ -1,0 +1,1 @@
+ALTER USER it4u_user WITH PASSWORD 'Geosoft@1234';

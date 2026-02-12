@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSG IT4U - Service Portal</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icon Font (Font Awesome CDN for demo purposes, or can use SVGs) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar glass-panel">
+            <div class="logo">
+                <h2 class="text-gradient"><i class="fa-solid fa-layer-group"></i> IT4U</h2>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#" class="nav-link active" data-page="dashboard">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <a href="#" class="nav-link" data-page="submit-ticket">
+                    <i class="fa-solid fa-plus-circle"></i> Raise Ticket
+                </a>
+                <a href="#" class="nav-link" data-page="my-tickets">
+                    <i class="fa-solid fa-ticket"></i> My Tickets
+                </a>
+                <a href="#" class="nav-link" data-page="knowledge-base">
+                    <i class="fa-solid fa-book"></i> Knowledge Base
+                </a>
+            </div>
+
+            <div style="margin-top: auto;">
+                <a href="admin.html" class="nav-link">
+                    <i class="fa-solid fa-user-shield"></i> Admin View
+                </a>
+                <div class="user-mini-profile glass-panel" style="margin-top: 1rem; padding: 10px; font-size: 0.85rem;">
+                    <div id="user-name-display" style="font-weight: 600;">Loading...</div>
+                    <div id="user-role-display" style="color: var(--text-secondary);">...</div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <div>
+                    <h1 id="page-title">Welcome Back, Alex</h1>
+                    <p style="color: var(--text-secondary);">Here's what's happening with your IT services today.</p>
+                </div>
+                <div class="glass-button">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+            </header>
+
+            <!-- Dashboard View -->
+            <div id="view-dashboard" class="page-view fade-in">
+                <!-- System Status / Ticker -->
+                <div class="glass-panel" style="padding: 1rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 1rem;">
+                    <i class="fa-solid fa-circle-check" style="color: var(--success-color);"></i>
+                    <span>All Systems Operational. No known outages for Autodesk Cloud Services.</span>
+                </div>
+
+                <!-- Quick Actions Grid -->
+                <h2>Quick Actions</h2>
+                <div class="dashboard-grid">
+                    <div class="card glass-panel" onclick="navigateTo('submit-ticket')">
+                        <i class="fa-solid fa-laptop-medical card-icon"></i>
+                        <h3>Report Issue</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Submit an incident for hardware, software, or network problems.</p>
+                    </div>
+                    <div class="card glass-panel" onclick="navigateTo('submit-ticket')">
+                        <i class="fa-solid fa-download card-icon"></i>
+                        <h3>Request Software</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Install new applications or plugins (AutoCAD, Adobe, etc.).</p>
+                    </div>
+                    <div class="card glass-panel" onclick="navigateTo('submit-ticket')">
+                        <i class="fa-solid fa-key card-icon"></i>
+                        <h3>Access Request</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">Get access to project folders, SharePoint sites, or VPN.</p>
+                    </div>
+                </div>
+
+                <!-- Recent Tickets -->
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h2>Recent Tickets</h2>
+                    <a href="#" onclick="navigateTo('my-tickets')" style="color: var(--accent-color); text-decoration: none;">View All</a>
+                </div>
+                <div class="glass-panel" style="padding: 0;">
+                    <div id="recent-tickets-list">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Ticket View -->
+            <div id="view-submit-ticket" class="page-view hidden fade-in">
+                <div class="glass-panel" style="padding: 2rem; max-width: 800px; margin: 0 auto;">
+                    <h2 style="margin-bottom: 2rem;">Submit a Ticket</h2>
+                    <form id="ticket-form">
+                        <div class="form-group">
+                            <label class="form-label">Category</label>
+                            <select id="ticket-category" class="form-select">
+                                <option value="" disabled selected>Select a category...</option>
+                                <option value="engineering">Engineering / CAD</option>
+                                <option value="software">Software Request</option>
+                                <option value="hardware">Hardware Issue</option>
+                                <option value="access">Access Request</option>
+                                <option value="m365">Microsoft 365 / Email</option>
+                            </select>
+                        </div>
+
+                        <!-- Dynamic Fields Container -->
+                        <div id="dynamic-fields"></div>
+
+                        <div class="form-group">
+                            <label class="form-label">Subject</label>
+                            <input type="text" class="form-input" placeholder="Brief description of the issue">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Description</label>
+                            <textarea class="form-input" rows="5" placeholder="Please provide detailed steps to reproduce the issue..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Attachments</label>
+                            <div style="border: 2px dashed var(--glass-border); padding: 2rem; text-align: center; border-radius: var(--radius-sm);">
+                                <i class="fa-solid fa-cloud-arrow-up" style="font-size: 2rem; color: var(--text-secondary); margin-bottom: 1rem;"></i>
+                                <p>Drag and drop files here, or click to browse</p>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem;">Accepts .log, .png, .jpg, .dwg (Max 10MB)</p>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 2rem; text-align: right;">
+                            <button type="button" class="glass-button" onclick="navigateTo('dashboard')" style="margin-right: 1rem;">Cancel</button>
+                            <button type="submit" class="primary-button">Submit Ticket</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- My Tickets View -->
+            <div id="view-my-tickets" class="page-view hidden fade-in">
+                <h2>My Tickets</h2>
+                <div class="glass-panel" style="padding: 1rem;">
+                    <table style="width: 100%; border-collapse: collapse; color: var(--text-primary);">
+                        <thead>
+                            <tr style="text-align: left; border-bottom: 1px solid var(--glass-border);">
+                                <th style="padding: 1rem;">ID</th>
+                                <th style="padding: 1rem;">Subject</th>
+                                <th style="padding: 1rem;">Status</th>
+                                <th style="padding: 1rem;">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="all-tickets-list">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Knowledge Base View (Placeholder) -->
+             <div id="view-knowledge-base" class="page-view hidden fade-in">
+                <div style="text-align: center; padding: 4rem;">
+                    <i class="fa-solid fa-book-open-reader" style="font-size: 4rem; color: var(--accent-color); margin-bottom: 2rem;"></i>
+                    <h2>Knowledge Base</h2>
+                    <p>Search specifically for Engineering and IT/Admin guides.</p>
+                    <div style="max-width: 500px; margin: 2rem auto;">
+                        <input type="text" class="form-input" placeholder="Search for solutions (e.g. 'AutoCAD Crash')...">
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/app.js"></script>
+    <script>
+        // Simple client-side router function exposed to global scope for onclick handlers
+        window.navigateTo = function(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page-view').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
+            
+            // Show target page
+            const target = document.getElementById('view-' + pageId);
+            if (target) target.classList.remove('hidden');
+
+            // Update nav state
+            const navLink = document.querySelector(`.nav-link[data-page="${pageId}"]`);
+            if (navLink) navLink.classList.add('active');
+        }
+    </script>
+</body>
+</html>

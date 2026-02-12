@@ -1,0 +1,177 @@
+Starting Test
+BROWSER LOG: [DEBUG] API Response: 200 GET /auth/me
+BROWSER LOG: [DEBUG] API Response: 200 GET /auth/me
+BROWSER LOG: [DEBUG] Route Changed: /app/tickets/new
+BROWSER LOG: [SessionManager] Started - Idle timeout: 30 min
+BROWSER LOG: [SessionManager] Stopped
+BROWSER LOG: [DEBUG] Route Changed: /app/tickets/new
+BROWSER LOG: [SessionManager] Started - Idle timeout: 30 min
+BROWSER LOG: [DEBUG] API Request: GET /users/managers 
+BROWSER LOG: [DEBUG] API Request: GET /users/managers 
+BROWSER LOG: [SessionManager] Stopped
+BROWSER LOG: [SessionManager] Started - Idle timeout: 30 min
+Submitting ticket...
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: setupInterceptors in api.js is deprecated. Interceptors are configured in apiClient.js
+BROWSER LOG: setupInterceptors in api.js is deprecated. Interceptors are configured in apiClient.js
+BROWSER LOG: [DEBUG] API Response: 200 GET /users/managers
+BROWSER LOG: [DEBUG] Create Ticket Submit attempt {title: Attachment Test Ticket 1766980975787, description: Testing attachments, category: OTHERS, employeeId: admin, deviceDetails: }
+BROWSER LOG: [DEBUG] Sending Create Ticket Payload {title: Attachment Test Ticket 1766980975787, description: Testing attachments, category: OTHERS, employeeId: admin, deviceDetails: undefined}
+BROWSER LOG: [DEBUG] API Request: POST /tickets {title: Attachment Test Ticket 1766980975787, description: Testing attachments, category: OTHERS, employeeId: admin, deviceDetails: undefined}
+Waiting for success modal...
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [DEBUG] API Response: 200 GET /users/managers
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [DEBUG] API Response: 200 POST /tickets
+BROWSER LOG: [DEBUG] Create Ticket Success {id: 46, ticketNumber: GSG-1220250046, title: Attachment Test Ticket 1766980975787, description: Testing attachments, status: PENDING_MANAGER_APPROVAL}
+Success modal visible
+Success Message: Ticket Created!Ticket created successfully!
+Ticket Number: GSG-1220250046OK
+BROWSER LOG: [DEBUG] Route Changed: /app/employee
+BROWSER LOG: [DEBUG] API Request: GET /tickets 
+BROWSER LOG: [DEBUG] API Request: GET /tickets 
+Clicked OK on modal
+BROWSER LOG: [vite] hot updated: /src/index.css
+Redirected to Employee Dashboard
+Looking for ticket with title: Attachment Test Ticket 1766980975787
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [DEBUG] API Response: 200 GET /tickets
+BROWSER LOG: [DEBUG] API Response: 200 GET /tickets
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [DEBUG] API Request: GET /tickets/13 
+BROWSER LOG: [DEBUG] API Request: GET /users 
+BROWSER LOG: [DEBUG] API Request: GET /tickets/13 
+BROWSER LOG: [DEBUG] API Request: GET /users 
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [DEBUG] API Response: 200 GET /users
+BROWSER LOG: [DEBUG] API Response: 200 GET /tickets/13
+BROWSER LOG: [DEBUG] API Response: 200 GET /users
+BROWSER LOG: [DEBUG] API Response: 200 GET /tickets/13
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css
+BROWSER LOG: [vite] hot updated: /src/index.css

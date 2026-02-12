@@ -1,0 +1,200 @@
+it4u-backend  | 16:26:42,020 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating DEBUG level on Logger[com.gsg.it4u] onto the JUL framework
+it4u-backend  | 16:26:42,020 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to INFO
+it4u-backend  | 16:26:42,020 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.springframework] onto the JUL framework
+it4u-backend  | 16:26:42,020 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
+it4u-backend  | 16:26:42,020 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.hibernate] onto the JUL framework
+it4u-backend  | 16:26:42,020 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@79c7532f - End of configuration.
+it4u-backend  | 16:26:42,020 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@2a448449 - Registering current configuration as safe fallback point
+it4u-backend  | 
+it4u-backend  |   .   ____          _            __ _ _
+it4u-backend  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+it4u-backend  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+it4u-backend  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+it4u-backend  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+it4u-backend  |  =========|_|==============|___/=/_/_/_/
+it4u-backend  | 
+it4u-backend  |  :: Spring Boot ::                (v3.3.0)
+it4u-backend  | 
+it4u-backend  | 2026-01-13 16:26:42.082 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+it4u-backend  | 2026-01-13 16:26:42.122 INFO  [main] com.gsg.it4u.It4uApplication - Starting It4uApplication v1.4.1 using Java 17.0.17 with PID 7 (/app/app.jar started by root in /app)
+it4u-backend  | 2026-01-13 16:26:42.123 INFO  [main] com.gsg.it4u.It4uApplication - The following 1 profile is active: "docker"
+it4u-backend  | 2026-01-13 16:26:43.449 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+it4u-backend  | 2026-01-13 16:26:43.515 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 8 JPA repository interfaces.
+it4u-backend  | 2026-01-13 16:26:44.235 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+it4u-backend  | 2026-01-13 16:26:44.247 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+it4u-backend  | 2026-01-13 16:26:44.248 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+it4u-backend  | 2026-01-13 16:26:44.249 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+it4u-backend  | 2026-01-13 16:26:44.282 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+it4u-backend  | 2026-01-13 16:26:44.283 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2115 ms
+it4u-backend  | 2026-01-13 16:26:44.551 DEBUG [main] com.zaxxer.hikari.HikariConfig - Driver class org.postgresql.Driver found in Thread context class loader org.springframework.boot.loader.launch.LaunchedClassLoader@28a418fc
+it4u-backend  | 2026-01-13 16:26:44.557 DEBUG [main] com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+it4u-backend  | 2026-01-13 16:26:44.562 DEBUG [main] com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+it4u-backend  | 2026-01-13 16:26:44.562 DEBUG [main] com.zaxxer.hikari.HikariConfig - autoCommit......................true
+it4u-backend  | 2026-01-13 16:26:44.562 DEBUG [main] com.zaxxer.hikari.HikariConfig - catalog.........................none
+it4u-backend  | 2026-01-13 16:26:44.562 DEBUG [main] com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+it4u-backend  | 2026-01-13 16:26:44.563 DEBUG [main] com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+it4u-backend  | 2026-01-13 16:26:44.563 DEBUG [main] com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+it4u-backend  | 2026-01-13 16:26:44.563 DEBUG [main] com.zaxxer.hikari.HikariConfig - dataSource......................none
+it4u-backend  | 2026-01-13 16:26:44.563 DEBUG [main] com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+it4u-backend  | 2026-01-13 16:26:44.563 DEBUG [main] com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+it4u-backend  | 2026-01-13 16:26:44.564 DEBUG [main] com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+it4u-backend  | 2026-01-13 16:26:44.564 DEBUG [main] com.zaxxer.hikari.HikariConfig - driverClassName................."org.postgresql.Driver"
+it4u-backend  | 2026-01-13 16:26:44.564 DEBUG [main] com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+it4u-backend  | 2026-01-13 16:26:44.564 DEBUG [main] com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+it4u-backend  | 2026-01-13 16:26:44.564 DEBUG [main] com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+it4u-backend  | 2026-01-13 16:26:44.564 DEBUG [main] com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+it4u-backend  | 2026-01-13 16:26:44.564 DEBUG [main] com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+it4u-backend  | 2026-01-13 16:26:44.564 DEBUG [main] com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+it4u-backend  | 2026-01-13 16:26:44.564 DEBUG [main] com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:postgresql://it4u-postgres:5432/it4u
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - keepaliveTime...................0
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - password........................<masked>
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - readOnly........................false
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - schema..........................none
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - username........................"it4u_user"
+it4u-backend  | 2026-01-13 16:26:44.565 DEBUG [main] com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+it4u-backend  | 2026-01-13 16:26:44.565 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+it4u-backend  | 2026-01-13 16:26:44.668 DEBUG [main] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to create/setup connection: FATAL: password authentication failed for user "it4u_user"
+it4u-backend  | 2026-01-13 16:26:44.668 DEBUG [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Cannot acquire connection from data source
+it4u-backend  | org.postgresql.util.PSQLException: FATAL: password authentication failed for user "it4u_user"
+it4u-backend  | 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:698)
+it4u-backend  | 	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:207)
+it4u-backend  | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+it4u-backend  | 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+it4u-backend  | 	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+it4u-backend  | 	at org.postgresql.Driver.makeConnection(Driver.java:446)
+it4u-backend  | 	at org.postgresql.Driver.connect(Driver.java:298)
+it4u-backend  | 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+it4u-backend  | 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+it4u-backend  | 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+it4u-backend  | 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+it4u-backend  | 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+it4u-backend  | 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+it4u-backend  | 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+it4u-backend  | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+it4u-backend  | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+it4u-backend  | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+it4u-backend  | 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.JavaBeanBinder$BeanProperty.lambda$getValue$0(JavaBeanBinder.java:383)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.JavaBeanBinder$Bean.get(JavaBeanBinder.java:256)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:58)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$6(Binder.java:480)
+it4u-backend  | 	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+it4u-backend  | 	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(Unknown Source)
+it4u-backend  | 	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+it4u-backend  | 	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+it4u-backend  | 	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+it4u-backend  | 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+it4u-backend  | 	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+it4u-backend  | 	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+it4u-backend  | 	at java.base/java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder.fromDataObjectBinders(Binder.java:488)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$7(Binder.java:479)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:597)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder$Context.withDataObject(Binder.java:583)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder.bindDataObject(Binder.java:479)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:418)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:350)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$5(Binder.java:477)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:99)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:87)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:63)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$6(Binder.java:480)
+it4u-backend  | 	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+it4u-backend  | 	at java.base/java.util.AbstractList$RandomAccessSpliterator.tryAdvance(Unknown Source)
+it4u-backend  | 	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+it4u-backend  | 	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+it4u-backend  | 	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+it4u-backend  | 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+it4u-backend  | 	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+it4u-backend  | 	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+it4u-backend  | 	at java.base/java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder.fromDataObjectBinders(Binder.java:488)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$7(Binder.java:479)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:597)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder$Context.withDataObject(Binder.java:583)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder.bindDataObject(Binder.java:479)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:418)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:350)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:339)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:269)
+it4u-backend  | 	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:256)
+it4u-backend  | 	at org.springframework.boot.context.properties.ConfigurationPropertiesBinder.bind(ConfigurationPropertiesBinder.java:94)
+it4u-backend  | 	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.bind(ConfigurationPropertiesBindingPostProcessor.java:96)
+it4u-backend  | 	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:79)
+it4u-backend  | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422)
+it4u-backend  | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1780)
+it4u-backend  | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+it4u-backend  | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+it4u-backend  | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+it4u-backend  | 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+it4u-backend  | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+it4u-backend  | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+it4u-backend  | 	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+it4u-backend  | 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+it4u-backend  | 	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.getIfUnique(DefaultListableBeanFactory.java:2153)
+it4u-backend  | 	at org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration$FlywayConfiguration.flyway(FlywayAutoConfiguration.java:172)
+it4u-backend  | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+it4u-backend  | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+it4u-backend  | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+it4u-backend  | 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+it4u-backend  | 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+it4u-backend  | 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+it4u-backend  | 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+it4u-backend  | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1337)
+it4u-backend  | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1167)
+it4u-backend  | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+it4u-backend  | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+it4u-backend  | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+it4u-backend  | 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+it4u-backend  | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+it4u-backend  | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+it4u-backend  | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+it4u-backend  | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+it4u-backend  | 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+it4u-backend  | 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+it4u-backend  | 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+it4u-backend  | 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+it4u-backend  | 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+it4u-backend  | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+it4u-backend  | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+it4u-backend  | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+it4u-backend  | 	at com.gsg.it4u.It4uApplication.main(It4uApplication.java:18)
+it4u-backend  | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+it4u-backend  | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+it4u-backend  | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+it4u-backend  | 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+it4u-backend  | 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+it4u-backend  | 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+it4u-backend  | 	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+it4u-backend  | 2026-01-13 16:26:45.672 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flyway' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flyway' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Failed to instantiate [org.flywaydb.core.Flyway]: Factory method 'flyway' threw exception with message: Error creating bean with name 'dataSource': Could not bind properties to 'HikariDataSource' : prefix=spring.datasource.hikari, ignoreInvalidFields=false, ignoreUnknownFields=true
+it4u-backend  | 2026-01-13 16:26:45.675 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+it4u-backend  | 2026-01-13 16:26:45.690 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+it4u-backend  | 
+it4u-backend  | Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+it4u-backend  | 2026-01-13 16:26:45.705 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+it4u-backend  | 
+it4u-backend  | ***************************
+it4u-backend  | APPLICATION FAILED TO START
+it4u-backend  | ***************************
+it4u-backend  | 
+it4u-backend  | Description:
+it4u-backend  | 
+it4u-backend  | Failed to bind properties under 'spring.datasource.hikari.connection' to java.sql.Connection:
+it4u-backend  | 
+it4u-backend  |     Reason: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "it4u_user"
+it4u-backend  | 
+it4u-backend  | Action:
+it4u-backend  | 
+it4u-backend  | Update your application's configuration
+it4u-backend  | 

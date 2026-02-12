@@ -1,0 +1,12 @@
+package com.gsg.it4u.constant;
+
+public enum EmailEventType {
+    TICKET_CREATED,
+    MANAGER_APPROVAL_REQUESTED,
+    MANAGER_APPROVED,
+    MANAGER_REJECTED,
+    ADMIN_STATUS_CHANGED,
+    TICKET_RESOLVED,
+    TICKET_CLOSED,
+    SMTP_TEST
+}

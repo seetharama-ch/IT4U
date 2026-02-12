@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Created</title>
+</head>
+<body>
+    <h2>Ticket Created Successfully</h2>
+    <p>Dear <span th:text="${employeeName}">Employee</span>,</p>
+    <p>Your ticket has been created with the following details:</p>
+    <ul>
+        <li><strong>Ticket ID:</strong> <span th:text="${ticketId}">123</span></li>
+        <li><strong>Title:</strong> <span th:text="${title}">Issue Title</span></li>
+        <li><strong>Category:</strong> <span th:text="${category}">Category</span></li>
+        <li><strong>Priority:</strong> <span th:text="${priority}">Priority</span></li>
+        <li><strong>Status:</strong> <span th:text="${status}">Pending Manager Approval</span></li>
+    </ul>
+    <p>Description: <span th:text="${description}">Description text...</span></p>
+    <br/>
+    <p>Best Regards,<br/>GSG IT Support</p>
+</body>
+</html>

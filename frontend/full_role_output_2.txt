@@ -1,0 +1,42 @@
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] ΓÇ║ e2e\scenarios\full-role-cycle.spec.ts:61:5 ΓÇ║ Full 4-Role End-to-End Verification ΓÇ║ Complete Ticket Lifecycle: Employee -> Manager -> Admin Support -> Admin
+[1A[2K[chromium] ΓÇ║ e2e\scenarios\full-role-cycle.spec.ts:61:5 ΓÇ║ Full 4-Role End-to-End Verification ΓÇ║ Complete Ticket Lifecycle: Employee -> Manager -> Admin Support -> Admin
+Creating user: mgr_dummy
+
+[1A[2K  1) [chromium] ΓÇ║ e2e\scenarios\full-role-cycle.spec.ts:61:5 ΓÇ║ Full 4-Role End-to-End Verification ΓÇ║ Complete Ticket Lifecycle: Employee -> Manager -> Admin Support -> Admin 
+
+    [31m"beforeAll" hook timeout of 300000ms exceeded.[39m
+
+       7 |
+       8 |     // 1. Seed All Test Users
+    >  9 |     test.beforeAll(async ({ browser }) => {
+         |          ^
+      10 |         test.setTimeout(300000); // Set test timeout to 5 mins
+      11 |         const page = await browser.newPage();
+      12 |         await loginAs(page, 'admin'); // Default admin is 'admin'
+        at E:\workspace\gsg-IT4U\frontend\e2e\scenarios\full-role-cycle.spec.ts:9:10
+
+    Error: page.click: Test ended.
+    Call log:
+    [2m  - waiting for locator('button:has-text("Add New User")')[22m
+
+
+      23 |             if (!content.includes(user.username)) {
+      24 |                 console.log(`Creating user: ${user.username}`);
+    > 25 |                 await page.click('button:has-text("Add New User")'); // Adjust selector as needed
+         |                            ^
+      26 |
+      27 |                 // Form filling
+      28 |                 await page.fill('input[name="username"]', user.username);
+        at ensureUser (E:\workspace\gsg-IT4U\frontend\e2e\scenarios\full-role-cycle.spec.ts:25:28)
+        at E:\workspace\gsg-IT4U\frontend\e2e\scenarios\full-role-cycle.spec.ts:53:9
+
+    Error Context: test-results\scenarios-full-role-cycle--948b2-ger---Admin-Support---Admin-chromium\error-context.md
+
+
+[1A[2K  1 failed
+    [chromium] ΓÇ║ e2e\scenarios\full-role-cycle.spec.ts:61:5 ΓÇ║ Full 4-Role End-to-End Verification ΓÇ║ Complete Ticket Lifecycle: Employee -> Manager -> Admin Support -> Admin 
+
+[36m  Serving HTML report at http://localhost:60945. Press Ctrl+C to quit.[39m

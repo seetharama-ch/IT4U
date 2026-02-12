@@ -1,0 +1,14 @@
+{
+    "title": "Need VS Code License",
+    "category": "SOFTWARE",
+    "softwareName": "VS Code",
+    "softwareVersion": "1.0",
+    "priority": "MEDIUM",
+    "description": "Need for dev work",
+    "managerName": "Ilapanda_Jeevan Kumar",
+    "managerEmail": "ilapanda@gsg.com",
+    "requester": {
+        "id": 12
+    },
+    "employeeId": "Vuyyuri_Vijay Kumar"
+}

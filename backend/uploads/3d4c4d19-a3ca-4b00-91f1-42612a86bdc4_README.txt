@@ -1,0 +1,4 @@
+
+Place your slide audio voiceovers here.
+Naming convention: slide_01.mp3, slide_02.mp3, ... slide_27.mp3
+    

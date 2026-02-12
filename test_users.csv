@@ -1,0 +1,4 @@
+Username,Password,Role,Department,JobTitle,ManagerUsername
+new_employee_1,password123,EMPLOYEE,Sales,Sales Rep,manager_mike
+new_manager_2,password123,MANAGER,HR,HR Director,
+new_security_3,password123,SECURITY_TEAM,Security,Analyst,

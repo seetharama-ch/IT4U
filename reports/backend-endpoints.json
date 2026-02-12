@@ -1,0 +1,202 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/admin/reports/tickets",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/reports/tickets/export",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/reports/tickets/export/csv",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/test-email",
+    "source": "Static"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/admin/users/{id}/role",
+    "source": "Static"
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/login",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/auth/me",
+    "source": "Static"
+  },
+  {
+    "method": "POST",
+    "path": "/api/health-logs/check/{serviceNodeId}",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/health-logs/node/{serviceNodeId}",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/health-logs/node/{serviceNodeId}/critical-count",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/health-logs/node/{serviceNodeId}/recent",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/health-logs/stats/summary",
+    "source": "Static"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/kb/{id}",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/service-nodes/{id}",
+    "source": "Static"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/service-nodes/{id}",
+    "source": "Static"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/service-nodes/{id}",
+    "source": "Static"
+  },
+  {
+    "method": "POST",
+    "path": "/api/service-nodes/{id}/health-check",
+    "source": "Static"
+  },
+  {
+    "method": "POST",
+    "path": "/api/service-nodes/bulk-health-check",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/service-nodes/environment/{environment}",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/service-nodes/health/{healthStatus}",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/service-nodes/node/{nodeId}",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/service-nodes/owner/{owner}",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/service-nodes/stats",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/service-nodes/stats/by-environment",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/service-nodes/stats/by-type",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/service-nodes/status/{status}",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/service-nodes/team/{team}",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/service-nodes/type/{nodeType}",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/tickets/{id}",
+    "source": "Static"
+  },
+  {
+    "method": "POST",
+    "path": "/api/tickets/{id}/attachments",
+    "source": "Static"
+  },
+  {
+    "method": "POST",
+    "path": "/api/tickets/{id}/comments",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/tickets/approvals",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/tickets/attachments/{filename:.+}",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/tickets/my",
+    "source": "Static"
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/users/{id}",
+    "source": "Static"
+  },
+  {
+    "method": "PUT",
+    "path": "/api/users/{id}",
+    "source": "Static"
+  },
+  {
+    "method": "POST",
+    "path": "/api/users/{id}/reset-password",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/users/managers",
+    "source": "Static"
+  },
+  {
+    "method": "GET",
+    "path": "/api/users/template",
+    "source": "Static"
+  },
+  {
+    "method": "POST",
+    "path": "/api/users/upload",
+    "source": "Static"
+  }
+]

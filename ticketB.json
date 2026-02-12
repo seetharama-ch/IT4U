@@ -1,0 +1,12 @@
+{
+    "title": "Grant Admin Access",
+    "category": "ACCESS_AND_M365",
+    "priority": "HIGH",
+    "description": "Please grant access",
+    "managerName": "Ilapanda_Jeevan Kumar",
+    "managerEmail": "ilapanda@gsg.com",
+    "requester": {
+        "id": 12
+    },
+    "employeeId": "Vuyyuri_Vijay Kumar"
+}

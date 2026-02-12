@@ -1,0 +1,92 @@
+
+Running 2 tests using 1 worker
+
+  ✘  1 e2e\admin_ticket_delete_fix.spec.ts:6:5 › Admin Ticket Delete Fix › should delete ticket successfully and handle JSON response (7ms)
+  ✘  2 e2e\admin_ticket_delete_fix.spec.ts:6:5 › Admin Ticket Delete Fix › should delete ticket successfully and handle JSON response (retry #1) (5ms)
+  ✘  3 e2e\admin_ticket_delete_fix.spec.ts:6:5 › Admin Ticket Delete Fix › should delete ticket successfully and handle JSON response (retry #2) (5ms)
+  ✘  4 e2e\admin_ticket_delete_fix.spec.ts:66:5 › Admin Ticket Delete Fix › should handle delete failure gracefully (5ms)
+  ✘  5 e2e\admin_ticket_delete_fix.spec.ts:66:5 › Admin Ticket Delete Fix › should handle delete failure gracefully (retry #1) (5ms)
+  ✘  6 e2e\admin_ticket_delete_fix.spec.ts:66:5 › Admin Ticket Delete Fix › should handle delete failure gracefully (retry #2) (7ms)
+
+
+  1) e2e\admin_ticket_delete_fix.spec.ts:6:5 › Admin Ticket Delete Fix › should delete ticket successfully and handle JSON response 
+
+    Error: Error reading storage state from e2e/.auth/admin.json:
+    ENOENT: no such file or directory, open 'D:\Workspace\gsg-IT4U\frontend\e2e\.auth\admin.json'
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Error reading storage state from e2e/.auth/admin.json:
+    ENOENT: no such file or directory, open 'D:\Workspace\gsg-IT4U\frontend\e2e\.auth\admin.json'
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Error reading storage state from e2e/.auth/admin.json:
+    ENOENT: no such file or directory, open 'D:\Workspace\gsg-IT4U\frontend\e2e\.auth\admin.json'
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response-retry2\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response-retry2\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) e2e\admin_ticket_delete_fix.spec.ts:66:5 › Admin Ticket Delete Fix › should handle delete failure gracefully 
+
+    Error: Error reading storage state from e2e/.auth/admin.json:
+    ENOENT: no such file or directory, open 'D:\Workspace\gsg-IT4U\frontend\e2e\.auth\admin.json'
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\admin_ticket_delete_fix-Ad-78aad-e-delete-failure-gracefully\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\admin_ticket_delete_fix-Ad-78aad-e-delete-failure-gracefully\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Error reading storage state from e2e/.auth/admin.json:
+    ENOENT: no such file or directory, open 'D:\Workspace\gsg-IT4U\frontend\e2e\.auth\admin.json'
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\admin_ticket_delete_fix-Ad-78aad-e-delete-failure-gracefully-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\admin_ticket_delete_fix-Ad-78aad-e-delete-failure-gracefully-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Error reading storage state from e2e/.auth/admin.json:
+    ENOENT: no such file or directory, open 'D:\Workspace\gsg-IT4U\frontend\e2e\.auth\admin.json'
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\admin_ticket_delete_fix-Ad-78aad-e-delete-failure-gracefully-retry2\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\admin_ticket_delete_fix-Ad-78aad-e-delete-failure-gracefully-retry2\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    e2e\admin_ticket_delete_fix.spec.ts:6:5 › Admin Ticket Delete Fix › should delete ticket successfully and handle JSON response 
+    e2e\admin_ticket_delete_fix.spec.ts:66:5 › Admin Ticket Delete Fix › should handle delete failure gracefully 

@@ -1,0 +1,2 @@
+This is a sample text file for verification of Issue 10.
+Content Verification Hash: 123456789

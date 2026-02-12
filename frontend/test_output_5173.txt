@@ -1,0 +1,218 @@
+
+Running 2 tests using 1 worker
+
+  ✘  1 e2e\admin_user_delete_fix.spec.ts:31:5 › Admin User Delete Fix › should delete user successfully and handle JSON response (2.7s)
+  ✘  2 e2e\admin_user_delete_fix.spec.ts:31:5 › Admin User Delete Fix › should delete user successfully and handle JSON response (retry #1) (2.7s)
+  ✘  3 e2e\admin_user_delete_fix.spec.ts:31:5 › Admin User Delete Fix › should delete user successfully and handle JSON response (retry #2) (2.8s)
+  ✘  4 e2e\admin_user_delete_fix.spec.ts:69:5 › Admin User Delete Fix › should handle invalid user list response gracefully (2.7s)
+  ✘  5 e2e\admin_user_delete_fix.spec.ts:69:5 › Admin User Delete Fix › should handle invalid user list response gracefully (retry #1) (2.8s)
+  ✘  6 e2e\admin_user_delete_fix.spec.ts:69:5 › Admin User Delete Fix › should handle invalid user list response gracefully (retry #2) (2.8s)
+
+
+  1) e2e\admin_user_delete_fix.spec.ts:31:5 › Admin User Delete Fix › should delete user successfully and handle JSON response 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/app/admin/users
+    Call log:
+    [2m  - navigating to "http://localhost:5173/app/admin/users", waiting until "load"[22m
+
+
+      26 |         });
+      27 |
+    > 28 |         await page.goto('/app/admin/users');
+         |                    ^
+      29 |     });
+      30 |
+      31 |     test('should delete user successfully and handle JSON response', async ({ page }) => {
+        at D:\Workspace\gsg-IT4U\frontend\e2e\admin_user_delete_fix.spec.ts:28:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-d9355-ly-and-handle-JSON-response\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-d9355-ly-and-handle-JSON-response\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\admin_user_delete_fix-Admi-d9355-ly-and-handle-JSON-response\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-d9355-ly-and-handle-JSON-response\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\admin_user_delete_fix-Admi-d9355-ly-and-handle-JSON-response\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/app/admin/users
+    Call log:
+    [2m  - navigating to "http://localhost:5173/app/admin/users", waiting until "load"[22m
+
+
+      26 |         });
+      27 |
+    > 28 |         await page.goto('/app/admin/users');
+         |                    ^
+      29 |     });
+      30 |
+      31 |     test('should delete user successfully and handle JSON response', async ({ page }) => {
+        at D:\Workspace\gsg-IT4U\frontend\e2e\admin_user_delete_fix.spec.ts:28:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-d9355-ly-and-handle-JSON-response-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-d9355-ly-and-handle-JSON-response-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\admin_user_delete_fix-Admi-d9355-ly-and-handle-JSON-response-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-d9355-ly-and-handle-JSON-response-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\admin_user_delete_fix-Admi-d9355-ly-and-handle-JSON-response-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/app/admin/users
+    Call log:
+    [2m  - navigating to "http://localhost:5173/app/admin/users", waiting until "load"[22m
+
+
+      26 |         });
+      27 |
+    > 28 |         await page.goto('/app/admin/users');
+         |                    ^
+      29 |     });
+      30 |
+      31 |     test('should delete user successfully and handle JSON response', async ({ page }) => {
+        at D:\Workspace\gsg-IT4U\frontend\e2e\admin_user_delete_fix.spec.ts:28:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-d9355-ly-and-handle-JSON-response-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-d9355-ly-and-handle-JSON-response-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\admin_user_delete_fix-Admi-d9355-ly-and-handle-JSON-response-retry2\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-d9355-ly-and-handle-JSON-response-retry2\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\admin_user_delete_fix-Admi-d9355-ly-and-handle-JSON-response-retry2\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) e2e\admin_user_delete_fix.spec.ts:69:5 › Admin User Delete Fix › should handle invalid user list response gracefully 
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/app/admin/users
+    Call log:
+    [2m  - navigating to "http://localhost:5173/app/admin/users", waiting until "load"[22m
+
+
+      26 |         });
+      27 |
+    > 28 |         await page.goto('/app/admin/users');
+         |                    ^
+      29 |     });
+      30 |
+      31 |     test('should delete user successfully and handle JSON response', async ({ page }) => {
+        at D:\Workspace\gsg-IT4U\frontend\e2e\admin_user_delete_fix.spec.ts:28:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-da717-er-list-response-gracefully\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-da717-er-list-response-gracefully\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\admin_user_delete_fix-Admi-da717-er-list-response-gracefully\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-da717-er-list-response-gracefully\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\admin_user_delete_fix-Admi-da717-er-list-response-gracefully\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/app/admin/users
+    Call log:
+    [2m  - navigating to "http://localhost:5173/app/admin/users", waiting until "load"[22m
+
+
+      26 |         });
+      27 |
+    > 28 |         await page.goto('/app/admin/users');
+         |                    ^
+      29 |     });
+      30 |
+      31 |     test('should delete user successfully and handle JSON response', async ({ page }) => {
+        at D:\Workspace\gsg-IT4U\frontend\e2e\admin_user_delete_fix.spec.ts:28:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-da717-er-list-response-gracefully-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-da717-er-list-response-gracefully-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\admin_user_delete_fix-Admi-da717-er-list-response-gracefully-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-da717-er-list-response-gracefully-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\admin_user_delete_fix-Admi-da717-er-list-response-gracefully-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/app/admin/users
+    Call log:
+    [2m  - navigating to "http://localhost:5173/app/admin/users", waiting until "load"[22m
+
+
+      26 |         });
+      27 |
+    > 28 |         await page.goto('/app/admin/users');
+         |                    ^
+      29 |     });
+      30 |
+      31 |     test('should delete user successfully and handle JSON response', async ({ page }) => {
+        at D:\Workspace\gsg-IT4U\frontend\e2e\admin_user_delete_fix.spec.ts:28:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-da717-er-list-response-gracefully-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-da717-er-list-response-gracefully-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\admin_user_delete_fix-Admi-da717-er-list-response-gracefully-retry2\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\admin_user_delete_fix-Admi-da717-er-list-response-gracefully-retry2\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\admin_user_delete_fix-Admi-da717-er-list-response-gracefully-retry2\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    e2e\admin_user_delete_fix.spec.ts:31:5 › Admin User Delete Fix › should delete user successfully and handle JSON response 
+    e2e\admin_user_delete_fix.spec.ts:69:5 › Admin User Delete Fix › should handle invalid user list response gracefully 

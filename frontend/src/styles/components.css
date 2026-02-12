@@ -1,0 +1,22 @@
+.card,
+.panel,
+.modal,
+.dialog,
+.loginCard {
+    background: var(--bg-card);
+    border: 1px solid var(--border-default);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+}
+
+.cardHeader,
+.panelHeader {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.muted,
+.helperText,
+.caption {
+    color: var(--text-muted);
+}

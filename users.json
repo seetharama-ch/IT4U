@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "username": "manager_mike",
+        "password": "password",
+        "role": "MANAGER",
+        "department": "Engineering",
+        "jobTitle": "Engineering Manager",
+        "manager": null
+    },
+    {
+        "id": 2,
+        "username": "security_sam",
+        "password": "password",
+        "role": "SECURITY_TEAM",
+        "department": "Security",
+        "jobTitle": null,
+        "manager": null
+    },
+    {
+        "id": 4,
+        "username": "it_support_jane",
+        "password": "password",
+        "role": "IT_SUPPORT",
+        "department": "IT",
+        "jobTitle": null,
+        "manager": null
+    },
+    {
+        "id": 5,
+        "username": "admin",
+        "password": "password",
+        "role": "ADMIN",
+        "department": null,
+        "jobTitle": null,
+        "manager": null
+    },
+    {
+        "id": 6,
+        "username": "HOD_User",
+        "password": "Geosoft@1234",
+        "role": "MANAGER",
+        "department": "Engineering",
+        "jobTitle": "HOD_Engineering",
+        "manager": null
+    },
+    {
+        "id": 7,
+        "username": "Team_Lead_User",
+        "password": "Geosoft@1234",
+        "role": "MANAGER",
+        "department": "Engineering",
+        "jobTitle": "Team_Lead",
+        "manager": null
+    },
+    {
+        "id": 8,
+        "username": "Engineer_1",
+        "password": "Geosoft@1234",
+        "role": "EMPLOYEE",
+        "department": "Engineering",
+        "jobTitle": "Software Engineer",
+        "manager": null
+    },
+    {
+        "id": 9,
+        "username": "Engineer_2",
+        "password": "Geosoft@1234",
+        "role": "EMPLOYEE",
+        "department": "Engineering",
+        "jobTitle": "DevOps Engineer",
+        "manager": null
+    },
+    {
+        "id": 10,
+        "username": "IT_Support_User",
+        "password": "Geosoft@1234",
+        "role": "IT_SUPPORT",
+        "department": "IT",
+        "jobTitle": "IT Support Specialist",
+        "manager": null
+    }
+]

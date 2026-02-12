@@ -1,0 +1,16 @@
+Create New User
+Username
+Password
+Email *
+Phone Number
+Role
+Employee
+Manager
+IT Support
+Security Team
+Admin
+Department
+Job Title
+Manager Username (Optional)
+Cancel
+Create

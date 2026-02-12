@@ -1,0 +1,240 @@
+it4u-backend      | 
+netpulse-backend  | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+it4u-backend      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+netpulse-backend  | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+it4u-backend      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+netpulse-backend  | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+it4u-backend      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+netpulse-backend  | 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+it4u-backend      | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+netpulse-backend  | 	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+netpulse-backend  | 	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+it4u-backend      | 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+netpulse-backend  | 	at io.micrometer.observation.Observation.observe(Observation.java:499)
+it4u-backend      | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+it4u-backend      | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+it4u-backend      | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+netpulse-backend  | 	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+it4u-backend      | 	... 17 common frames omitted
+netpulse-backend  | 	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+netpulse-backend  | 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+netpulse-backend  | 	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+netpulse-backend  | 	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+netpulse-backend  | 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+it4u-backend      | Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: FATAL: password authentication failed for user "it4u_user"
+it4u-backend      | -----------------------------------------------------------------------------------------------------
+netpulse-backend  | 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+it4u-backend      | SQL State  : 28P01
+netpulse-backend  | 	at java.base/java.lang.Thread.run(Unknown Source)
+it4u-backend      | Error Code : 0
+netpulse-backend  | Caused by: java.io.IOException: error=2, No such file or directory
+netpulse-backend  | 	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+netpulse-backend  | 	at java.base/java.lang.ProcessImpl.<init>(Unknown Source)
+it4u-backend      | Message    : FATAL: password authentication failed for user "it4u_user"
+netpulse-backend  | 	at java.base/java.lang.ProcessImpl.start(Unknown Source)
+netpulse-backend  | 	... 27 more
+it4u-backend      | 
+netpulse-backend  | java.io.IOException: Cannot run program "powershell.exe": error=2, No such file or directory
+it4u-backend      | 	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+netpulse-backend  | 	at java.base/java.lang.ProcessBuilder.start(Unknown Source)
+netpulse-backend  | 	at java.base/java.lang.ProcessBuilder.start(Unknown Source)
+netpulse-backend  | 	at com.geosoft.netpulse.ops.sessions.UserSessionCollectorService.executeQuser(UserSessionCollectorService.java:93)
+netpulse-backend  | 	at com.geosoft.netpulse.ops.sessions.UserSessionCollectorService.collectSessionsForDevice(UserSessionCollectorService.java:44)
+netpulse-backend  | 	at com.geosoft.netpulse.ops.sessions.UserSessionCollectorService.pollOnlineDevices(UserSessionCollectorService.java:61)
+netpulse-backend  | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+netpulse-backend  | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+it4u-backend      | 	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+it4u-backend      | 	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+it4u-backend      | 	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+netpulse-backend  | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+it4u-backend      | 	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+netpulse-backend  | 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+it4u-backend      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+netpulse-backend  | 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352)
+it4u-backend      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+netpulse-backend  | 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:713)
+it4u-backend      | 	... 24 common frames omitted
+it4u-backend      | Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "it4u_user"
+it4u-backend      | 	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:698)
+netpulse-backend  | 	at com.geosoft.netpulse.ops.sessions.UserSessionCollectorService$$SpringCGLIB$$0.pollOnlineDevices(<generated>)
+it4u-backend      | 	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:207)
+netpulse-backend  | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+it4u-backend      | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+netpulse-backend  | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+it4u-backend      | 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+netpulse-backend  | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+it4u-backend      | 	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+it4u-backend      | 	at org.postgresql.Driver.makeConnection(Driver.java:446)
+it4u-backend      | 	at org.postgresql.Driver.connect(Driver.java:298)
+netpulse-backend  | 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+it4u-backend      | 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+it4u-backend      | 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+it4u-backend      | 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+netpulse-backend  | 	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+it4u-backend      | 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+netpulse-backend  | 	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+netpulse-backend  | 	at io.micrometer.observation.Observation.observe(Observation.java:499)
+netpulse-backend  | 	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+it4u-backend      | 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+netpulse-backend  | 	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+netpulse-backend  | 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+netpulse-backend  | 	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+it4u-backend      | 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+it4u-backend      | 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+netpulse-backend  | 	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+it4u-backend      | 	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+netpulse-backend  | 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+it4u-backend      | 	... 30 common frames omitted
+netpulse-backend  | 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+it4u-backend      | 16:14:20,206 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+netpulse-backend  | 	at java.base/java.lang.Thread.run(Unknown Source)
+netpulse-backend  | Caused by: java.io.IOException: error=2, No such file or directory
+netpulse-backend  | 	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+netpulse-backend  | 	at java.base/java.lang.ProcessImpl.<init>(Unknown Source)
+it4u-backend      | 16:14:20,209 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Here is a list of configurators discovered as a service, by rank: 
+netpulse-backend  | 	at java.base/java.lang.ProcessImpl.start(Unknown Source)
+it4u-backend      | 16:14:20,209 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+netpulse-backend  | 	... 27 more
+it4u-backend      | 16:14:20,209 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+netpulse-backend  | java.io.IOException: Cannot run program "powershell.exe": error=2, No such file or directory
+it4u-backend      | 16:14:20,209 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+it4u-backend      | 16:14:20,217 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+it4u-backend      | 16:14:20,217 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+netpulse-backend  | 	at java.base/java.lang.ProcessBuilder.start(Unknown Source)
+it4u-backend      | 16:14:20,218 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+it4u-backend      | 16:14:20,221 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+it4u-backend      | 16:14:20,222 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+netpulse-backend  | 	at java.base/java.lang.ProcessBuilder.start(Unknown Source)
+it4u-backend      | 16:14:20,222 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 4 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+netpulse-backend  | 	at com.geosoft.netpulse.ops.sessions.UserSessionCollectorService.executeQuser(UserSessionCollectorService.java:93)
+it4u-backend      | 16:14:20,222 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+it4u-backend      | 16:14:20,222 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+it4u-backend      | 16:14:20,224 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+netpulse-backend  | 	at com.geosoft.netpulse.ops.sessions.UserSessionCollectorService.collectSessionsForDevice(UserSessionCollectorService.java:44)
+netpulse-backend  | 	at com.geosoft.netpulse.ops.sessions.UserSessionCollectorService.pollOnlineDevices(UserSessionCollectorService.java:61)
+netpulse-backend  | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+netpulse-backend  | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+it4u-backend      | 16:14:20,224 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+netpulse-backend  | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+it4u-backend      | 16:14:20,224 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 2 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+it4u-backend      | 16:14:20,224 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+netpulse-backend  | 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+netpulse-backend  | 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352)
+netpulse-backend  | 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:713)
+it4u-backend      | 16:14:20,225 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+it4u-backend      | 16:14:20,225 |-INFO in ch.qos.logback.classic.BasicConfigurator@22bac7bc - Setting up default configuration.
+it4u-backend      | 16:14:20,241 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 16 milliseconds. ExecutionStatus=NEUTRAL
+it4u-backend      | 16:14:20,781 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@63798ca7 - URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/logback-spring.xml] is not of type file
+it4u-backend      | 16:14:20,868 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+netpulse-backend  | 	at com.geosoft.netpulse.ops.sessions.UserSessionCollectorService$$SpringCGLIB$$0.pollOnlineDevices(<generated>)
+it4u-backend      | 16:14:20,868 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+netpulse-backend  | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+it4u-backend      | 16:14:20,877 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+netpulse-backend  | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+it4u-backend      | 16:14:20,900 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ROLLING_FILE]
+it4u-backend      | 16:14:20,900 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+netpulse-backend  | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+it4u-backend      | 16:14:20,905 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+it4u-backend      | 16:14:20,912 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - setting totalSizeCap to 2 GB
+netpulse-backend  | 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+it4u-backend      | 16:14:20,919 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use gz compression
+it4u-backend      | 16:14:20,925 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use the pattern logs/it4u.%d{yyyy-MM-dd}.%i.log for the active file
+it4u-backend      | 16:14:20,958 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/it4u.%d{yyyy-MM-dd}.%i.log.gz'.
+netpulse-backend  | 	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+it4u-backend      | 16:14:20,958 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Roll-over at midnight.
+it4u-backend      | 16:14:20,964 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Setting initial period to 2026-01-13T16:14:19.239Z
+it4u-backend      | 16:14:20,966 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+netpulse-backend  | 	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+netpulse-backend  | 	at io.micrometer.observation.Observation.observe(Observation.java:499)
+netpulse-backend  | 	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+netpulse-backend  | 	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+it4u-backend      | 16:14:20,966 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+netpulse-backend  | 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+netpulse-backend  | 	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+netpulse-backend  | 	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+it4u-backend      | 16:14:20,974 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - Active log file name: logs/it4u.log
+it4u-backend      | 16:14:20,974 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - File property is set to [logs/it4u.log]
+it4u-backend      | 16:14:20,976 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+it4u-backend      | 16:14:20,976 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+netpulse-backend  | 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+netpulse-backend  | 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+it4u-backend      | 16:14:20,977 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+netpulse-backend  | 	at java.base/java.lang.Thread.run(Unknown Source)
+it4u-backend      | 16:14:20,977 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ROLLING_FILE] to Logger[ROOT]
+netpulse-backend  | Caused by: java.io.IOException: error=2, No such file or directory
+netpulse-backend  | 	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+it4u-backend      | 16:14:20,977 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.gsg.it4u] to DEBUG
+netpulse-backend  | 	at java.base/java.lang.ProcessImpl.<init>(Unknown Source)
+netpulse-backend  | 	at java.base/java.lang.ProcessImpl.start(Unknown Source)
+netpulse-backend  | 	... 27 more
+it4u-backend      | 16:14:20,977 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating DEBUG level on Logger[com.gsg.it4u] onto the JUL framework
+netpulse-backend  | PollOnlineDevices complete.
+it4u-backend      | 16:14:20,977 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to INFO
+it4u-backend      | 16:14:20,977 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.springframework] onto the JUL framework
+it4u-backend      | 16:14:20,977 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
+it4u-backend      | 16:14:20,977 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.hibernate] onto the JUL framework
+it4u-backend      | 16:14:20,977 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@79c7532f - End of configuration.
+it4u-backend      | 16:14:20,977 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@2a448449 - Registering current configuration as safe fallback point
+it4u-backend      | 
+it4u-backend      |   .   ____          _            __ _ _
+it4u-backend      |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+it4u-backend      | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+netpulse-backend  | Processing request: /api/metrics/latest
+it4u-backend      |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+it4u-backend      |   '  |____| .__|_| |_|_| |_\__, | / / / /
+it4u-backend      |  =========|_|==============|___/=/_/_/_/
+it4u-backend      | 
+it4u-backend      |  :: Spring Boot ::                (v3.3.0)
+it4u-backend      | 
+netpulse-backend  | Attempting to validate JWT token.
+netpulse-backend  | JWT token validation failed (boolean false).
+netpulse-backend  | No Bearer token found in Authorization header or header is missing.
+it4u-backend      | 2026-01-13 16:14:21.051 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+netpulse-backend  | Processing request: /api/metrics/latest
+netpulse-backend  | Attempting to validate JWT token.
+netpulse-backend  | JWT token validation failed (boolean false).
+netpulse-backend  | Processing request: /api/devices/ops
+netpulse-backend  | Attempting to validate JWT token.
+it4u-backend      | 2026-01-13 16:14:21.118 INFO  [main] com.gsg.it4u.It4uApplication - Starting It4uApplication v1.4.1 using Java 17.0.17 with PID 7 (/app/app.jar started by root in /app)
+netpulse-backend  | JWT token validation failed (boolean false).
+netpulse-backend  | Processing request: /api/devices/ops
+netpulse-backend  | Attempting to validate JWT token.
+it4u-backend      | 2026-01-13 16:14:21.119 INFO  [main] com.gsg.it4u.It4uApplication - The following 1 profile is active: "docker"
+it4u-backend      | 2026-01-13 16:14:22.932 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+netpulse-backend  | JWT token validation failed (boolean false).
+it4u-backend      | 2026-01-13 16:14:23.050 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104 ms. Found 8 JPA repository interfaces.
+it4u-backend      | 2026-01-13 16:14:24.102 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+it4u-backend      | 2026-01-13 16:14:24.122 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+netpulse-backend  | No Bearer token found in Authorization header or header is missing.
+netpulse-backend  | No Bearer token found in Authorization header or header is missing.
+netpulse-backend  | No Bearer token found in Authorization header or header is missing.
+it4u-backend      | 2026-01-13 16:14:24.125 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+it4u-backend      | 2026-01-13 16:14:24.126 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+netpulse-backend  | Processing request: /api/metrics/latest
+it4u-backend      | 2026-01-13 16:14:24.182 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+netpulse-backend  | Attempting to validate JWT token.
+netpulse-backend  | JWT token validation failed (boolean false).
+it4u-backend      | 2026-01-13 16:14:24.183 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2948 ms
+netpulse-backend  | No Bearer token found in Authorization header or header is missing.
+it4u-backend      | 2026-01-13 16:14:24.822 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+netpulse-backend  | Processing request: /api/devices/ops
+it4u-backend      | 2026-01-13 16:14:25.963 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+netpulse-backend  | Attempting to validate JWT token.
+it4u-backend      | 2026-01-13 16:14:27.011 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+netpulse-backend  | JWT token validation failed (boolean false).
+it4u-backend      | 2026-01-13 16:14:28.018 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+netpulse-backend  | No Bearer token found in Authorization header or header is missing.
+it4u-backend      | 2026-01-13 16:14:29.030 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+netpulse-backend  | No Bearer token found in Authorization header or header is missing.
+it4u-backend      | 2026-01-13 16:14:30.039 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+netpulse-backend  | Processing request: /api/metrics/latest
+it4u-backend      | 2026-01-13 16:14:31.043 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+netpulse-backend  | Attempting to validate JWT token.
+it4u-backend      | 2026-01-13 16:14:32.048 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+netpulse-backend  | JWT token validation failed (boolean false).
+it4u-backend      | 2026-01-13 16:14:33.054 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+netpulse-backend  | No Bearer token found in Authorization header or header is missing.
+netpulse-backend  | No Bearer token found in Authorization header or header is missing.
+netpulse-backend  | Processing request: /api/metrics/latest
+netpulse-backend  | Attempting to validate JWT token.
+netpulse-backend  | JWT token validation failed (boolean false).

@@ -1,0 +1,152 @@
+[
+  {
+    "method": "GET",
+    "path": "/users/managers",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\CreateTicket.jsx:46",
+    "context": "User"
+  },
+  {
+    "method": "POST",
+    "path": "/tickets",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\CreateTicket.jsx:185",
+    "context": "User"
+  },
+  {
+    "method": "POST",
+    "path": "/tickets/${ticketId}/attachments",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\CreateTicket.jsx:192",
+    "context": "User"
+  },
+  {
+    "method": "GET",
+    "path": "/admin/logs",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\DiagnosticsPanel.jsx:17",
+    "context": "User"
+  },
+  {
+    "method": "GET",
+    "path": "/admin/email-audit",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\EmailAuditDashboard.jsx:40",
+    "context": "User"
+  },
+  {
+    "method": "GET",
+    "path": "/kb",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\KnowledgeBase.jsx:21",
+    "context": "User"
+  },
+  {
+    "method": "POST",
+    "path": "/kb",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\KnowledgeBase.jsx:31",
+    "context": "User"
+  },
+  {
+    "method": "DELETE",
+    "path": "/kb/${id}",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\KnowledgeBase.jsx:46",
+    "context": "User"
+  },
+  {
+    "method": "POST",
+    "path": "/auth/login",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\Login.jsx:46",
+    "context": "User"
+  },
+  {
+    "method": "GET",
+    "path": "/tickets/${id}",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\TicketDetails.jsx:51",
+    "context": "User"
+  },
+  {
+    "method": "GET",
+    "path": "/users",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\TicketDetails.jsx:62",
+    "context": "User"
+  },
+  {
+    "method": "POST",
+    "path": "/tickets/${id}/attachments",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\TicketDetails.jsx:107",
+    "context": "User"
+  },
+  {
+    "method": "POST",
+    "path": "/tickets/${id}/comments",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\TicketDetails.jsx:125",
+    "context": "User"
+  },
+  {
+    "method": "GET",
+    "path": "/users/template",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\UserImportModal.jsx:20",
+    "context": "User"
+  },
+  {
+    "method": "POST",
+    "path": "/users/upload",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\UserImportModal.jsx:50",
+    "context": "User"
+  },
+  {
+    "method": "GET",
+    "path": "/users",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\UserList.jsx:47",
+    "context": "User"
+  },
+  {
+    "method": "POST",
+    "path": "/users/${selectedUser.id}/reset-password",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\UserList.jsx:84",
+    "context": "User"
+  },
+  {
+    "method": "DELETE",
+    "path": "/users/${selectedUser.id}",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\UserList.jsx:97",
+    "context": "User"
+  },
+  {
+    "method": "PUT",
+    "path": "/admin/users/${selectedUser.id}/role",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\UserList.jsx:151",
+    "context": "User"
+  },
+  {
+    "method": "PUT",
+    "path": "/users/${selectedUser.id}",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\UserList.jsx:155",
+    "context": "User"
+  },
+  {
+    "method": "POST",
+    "path": "/users",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\UserList.jsx:158",
+    "context": "User"
+  },
+  {
+    "method": "POST",
+    "path": "/users/upload",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\components\\UserList.jsx:196",
+    "context": "User"
+  },
+  {
+    "method": "GET",
+    "path": "/auth/me",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\context\\AuthContext.jsx:14",
+    "context": "User"
+  },
+  {
+    "method": "GET",
+    "path": "/tickets",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\api.js:15",
+    "context": "User"
+  },
+  {
+    "method": "POST",
+    "path": "/tickets",
+    "location": "D:\\Workspace\\gsg-IT4U\\frontend\\src\\api.js:26",
+    "context": "User"
+  }
+]

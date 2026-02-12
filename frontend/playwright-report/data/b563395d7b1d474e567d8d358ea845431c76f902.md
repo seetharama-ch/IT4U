@@ -1,0 +1,134 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - generic [ref=e7]:
+      - link "Geosoft IT4U Support Portal" [ref=e9] [cursor=pointer]:
+        - /url: /
+        - img "Geosoft" [ref=e10]
+        - generic [ref=e11]:
+          - generic [ref=e12]: IT4U
+          - generic [ref=e13]: Support Portal
+      - generic [ref=e14]:
+        - link "Dashboard" [ref=e15] [cursor=pointer]:
+          - /url: /app
+        - link "Report Issue" [ref=e16] [cursor=pointer]:
+          - /url: /app/tickets/new
+        - link "Knowledge Base" [ref=e17] [cursor=pointer]:
+          - /url: /app/kb
+      - generic [ref=e18]:
+        - button "Toggle Dark Mode" [ref=e19] [cursor=pointer]:
+          - img [ref=e20]
+        - button "Open user menu e e2e_emp_01" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Open user menu
+          - generic [ref=e26]: e
+          - generic [ref=e27]: e2e_emp_01
+          - img [ref=e28]
+  - main [ref=e30]:
+    - generic [ref=e31]:
+      - heading "Create Service Request" [level=1] [ref=e32]
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: Title
+          - textbox "Title" [ref=e36]:
+            - /placeholder: Brief summary
+            - text: E2E_Attachments_Visibility_20260109145250965
+        - generic [ref=e37]:
+          - generic [ref=e38]: Employee ID
+          - textbox [ref=e39]: e2e_emp_01
+        - generic [ref=e40]:
+          - generic [ref=e41]: Device Asset ID / Serial
+          - textbox "Device Asset ID / Serial" [ref=e42]:
+            - /placeholder: e.g. LPT-2023-005
+        - generic [ref=e43]:
+          - generic [ref=e44]: Category
+          - combobox "Category" [ref=e45]:
+            - option "Select Category..."
+            - option "Hardware Issues"
+            - option "Software Installation / Upgrade" [selected]
+            - option "Network Issues"
+            - option "Access & Microsoft 365"
+            - option "Procurement"
+            - option "Others"
+        - generic [ref=e46]:
+          - generic [ref=e47]: Priority
+          - combobox "Priority" [ref=e48]:
+            - option "Low"
+            - option "Medium"
+            - option "High" [selected]
+            - option "Critical"
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e51]: Software Name
+            - textbox "Software Name" [ref=e52]: AutoCAD
+          - generic [ref=e53]:
+            - generic [ref=e54]: Version
+            - textbox "Version" [ref=e55]: "2020"
+        - generic [ref=e56]:
+          - generic [ref=e57]: Description
+          - textbox "Description" [ref=e58]:
+            - /placeholder: Please provide detailed information...
+            - text: "E2E: AutoCAD licensing error + attachment test"
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - generic [ref=e61]: Attachment (Optional)
+            - generic [ref=e63] [cursor=pointer]:
+              - img [ref=e64]
+              - generic [ref=e66]:
+                - generic [ref=e67]: employee_attachment.pdf
+                - button "✕" [ref=e68]
+              - paragraph [ref=e69]: 0.00 MB
+              - button "Choose File" [ref=e70]
+          - generic [ref=e71]:
+            - generic [ref=e72]: Approving Manager
+            - combobox "Approving Manager" [ref=e73]:
+              - option "Select Manager..." [selected]
+              - option "mgr1 (General)"
+              - option "s rajesh (Cyclone)"
+              - option "np mgr 20251229152135 (IT)"
+              - option "np mgr 20251229152431 (IT)"
+              - option "np mgr 20251229152759 (IT)"
+              - option "np mgr 20251229152938 (IT)"
+              - option "np mgr 20251229153127 (IT)"
+              - option "np mgr 20251229153321 (IT)"
+              - option "np mgr 20251229153534 (IT)"
+              - option "np mgr 20251229153622 (IT)"
+              - option "np mgr 20251229153747 (IT)"
+              - option "np mgr 20251229153919 (IT)"
+              - option "np mgr 20251229154035 (IT)"
+              - option "np mgr 20251229154133 (IT)"
+              - option "e2e mgr 202512291546 (IT)"
+              - option "e2e mgr 202512291548 (IT)"
+              - option "e2e mgr 202512291550 (IT)"
+              - option "e2e mgr 202512291552 (IT)"
+              - option "e2e mgr 202512291554 (IT)"
+              - option "e2e mgr 202512291559 (IT)"
+              - option "e2e mgr 202512291602 (IT)"
+              - option "e2e mgr 202512291604 (IT)"
+              - option "e2e mgr 202512291607 (IT)"
+              - option "e2e mgr 202512291610 (IT)"
+              - option "e2e mgr 202512291611 (IT)"
+              - option "e2e mgr 202512291619 (IT)"
+              - option "e2e mgr 202512291623 (IT)"
+              - option "e2e mgr 202512291629 (IT)"
+              - option "e2e mgr 202512291634 (IT)"
+              - option "e2e mgr 202512291636 (IT)"
+              - option "e2e mgr 202512291639 (IT)"
+              - option "e2e mgr 202512291651 (IT)"
+              - option "i jeevan (Cyclone)"
+              - option "manager mike (General)"
+              - option "manager (General)"
+              - option "k manoj (Cyclone)"
+              - option "m ravi (Cyclone QC)"
+              - option "k nalini (Cyclone)"
+              - option "a shantharam (Cyclone)"
+              - option "manager e2e 20251225 (E2E Dept)"
+              - option "e2e mgr 01 (IT)"
+              - option "e2e mgr 02 (IT)"
+            - button "Fetch Managers" [ref=e74] [cursor=pointer]
+        - generic [ref=e75]:
+          - button "Cancel" [ref=e76] [cursor=pointer]
+          - button "Submit Request" [ref=e77] [cursor=pointer]
+  - contentinfo [ref=e78]: Created by Seetharam@ IT4U • v1.4 • 2025 © GeoSoftGlobal-Surtech International
+```

@@ -1,0 +1,5 @@
+Username,Password,Role,Department,JobTitle,ManagerUsername
+Duppala_Muralidhar,Geosoft@1234,HOD,Branch HOD,HOD,sudesh
+Ilapanda_Jeevan Kumar,Geosoft@1234,MANAGER,Cyclone,Manager,Duppala_Muralidhar
+Bobbili_S S N Murthy,Geosoft@1234,MANAGER,Cyclone,Engneer,Ilapanda_Jeevan Kumar
+Pilla_Pavan,Geosoft@1234,IT_SUPPORT,IT Support,IT Support,Duppala_Muralidhar

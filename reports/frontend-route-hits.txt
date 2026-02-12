@@ -1,0 +1,29 @@
+﻿D:\Workspace\gsg-IT4U\frontend\src\components\Login.jsx:24 => let path = '/';
+D:\Workspace\gsg-IT4U\frontend\src\components\Login.jsx:26 => case 'ADMIN': path = '/app/admin'; break;
+D:\Workspace\gsg-IT4U\frontend\src\components\Login.jsx:27 => case 'MANAGER': path = '/app/manager'; break;
+D:\Workspace\gsg-IT4U\frontend\src\components\Login.jsx:28 => case 'IT_SUPPORT': path = '/app/support'; break;
+D:\Workspace\gsg-IT4U\frontend\src\components\Login.jsx:29 => case 'EMPLOYEE': path = '/app/employee'; break;
+D:\Workspace\gsg-IT4U\frontend\src\components\Login.jsx:30 => default: path = '/';
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:34 => if (!user) return <Navigate to="/login" replace />;
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:37 => case 'EMPLOYEE': return <Navigate to="/app/employee" replace />;
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:38 => case 'MANAGER': return <Navigate to="/app/manager" replace />;
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:39 => case 'IT_SUPPORT': return <Navigate to="/app/it-support" replace />;
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:40 => case 'ADMIN': return <Navigate to="/app/admin" replace />;
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:41 => default: return <Navigate to="/app/employee" replace />;
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:68 => <Route path="/login" element={<Login />} />
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:71 => <Route path="/app" element={<PrivateRoute><AppLayout /></PrivateRoute>}>
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:75 => <Route path="employee" element={<TicketList />} />
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:76 => <Route path="manager" element={<TicketList />} />
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:77 => <Route path="it-support" element={<TicketList />} />
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:78 => <Route path="admin" element={<TicketList />} />
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:81 => <Route path="tickets/new" element={<CreateTicket />} />
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:82 => <Route path="tickets/:id" element={<TicketDetails />} />
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:83 => <Route path="kb" element={<KnowledgeBase />} />
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:86 => <Route path="admin/users" element={<UserList />} />
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:87 => <Route path="admin/diagnostics" element={<DiagnosticsPanel />} />
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:88 => <Route path="admin/reports" element={<ReportsPage />} />
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:89 => <Route path="admin/email-audit" element={<EmailAuditDashboard />} />
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:93 => <Route path="/create" element={<Navigate to="/app/tickets/new" replace />} />
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:94 => <Route path="/new-ticket" element={<Navigate to="/app/tickets/new" replace />} />
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:97 => <Route path="/" element={<PrivateRoute><RoleRedirector /></PrivateRoute>} />
+D:\Workspace\gsg-IT4U\frontend\src\App.jsx:98 => <Route path="*" element={<NotFound />} />

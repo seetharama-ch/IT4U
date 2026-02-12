@@ -1,0 +1,2 @@
+Username,Password,Role,Department,JobTitle,ManagerUsername
+testuser_csv,pass123,EMPLOYEE,IT,Tester,manager_mike

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Log directory: default to ./logs (project/runtime folder) -->
+    <property name="LOG_DIR" value="${LOG_DIR:-logs}" />
+
+    <!-- App name used in filename -->
+    <property name="APP_NAME" value="it4u" />
+
+    <!-- Console pattern -->
+    <property name="CONSOLE_PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n" />
+
+    <!-- File pattern -->
+    <property name="FILE_PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n" />
+
+    <!-- Console logging (keep for NSSM stdout/stderr + quick diagnostics) -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${CONSOLE_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Rolling file appender -->
+    <appender name="ROLLING_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- Current active log -->
+        <file>${LOG_DIR}/${APP_NAME}.log</file>
+
+        <encoder>
+            <pattern>${FILE_PATTERN}</pattern>
+        </encoder>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- Daily file + index + gz compression -->
+            <fileNamePattern>${LOG_DIR}/${APP_NAME}.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+
+            <!-- Keep last 30 days -->
+            <maxHistory>30</maxHistory>
+
+            <!-- Total disk cap (optional safety) -->
+            <totalSizeCap>2GB</totalSizeCap>
+
+            <!-- Size-based rollover within a day -->
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>50MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+    </appender>
+
+    <!-- Logging levels:
+         root INFO (normal)
+         application DEBUG (data-wise troubleshooting without code changes)
+    -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="ROLLING_FILE" />
+    </root>
+
+    <!-- Change this package to your backend base package -->
+    <!-- Example: com.gsg.it4u OR com.geosoft.it4u -->
+    <logger name="com.gsg.it4u" level="DEBUG" />
+
+    <!-- Reduce noise (optional safe defaults) -->
+    <logger name="org.springframework" level="INFO" />
+    <logger name="org.hibernate" level="INFO" />
+</configuration>

@@ -1,0 +1,23 @@
+# Frontend Routes
+
+- `*`
+- `/`
+- `/app`
+- `/app/admin`
+- `/app/employee`
+- `/app/manager`
+- `/app/support`
+- `/create`
+- `/login`
+- `/new-ticket`
+- `admin`
+- `admin/diagnostics`
+- `admin/email-audit`
+- `admin/reports`
+- `admin/users`
+- `employee`
+- `it-support`
+- `kb`
+- `manager`
+- `tickets/:id`
+- `tickets/new`

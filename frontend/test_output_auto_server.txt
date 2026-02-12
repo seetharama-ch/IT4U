@@ -1,0 +1,13 @@
+
+Running 2 tests using 1 worker
+
+Test started: delete user
+Clicking delete button
+Confirming delete
+Intercepted DELETE request
+Waiting for success message
+  ✓  1 e2e\admin_user_delete_fix.spec.ts:31:5 › Admin User Delete Fix › should delete user successfully and handle JSON response (972ms)
+Test started: invalid response
+  ✓  2 e2e\admin_user_delete_fix.spec.ts:69:5 › Admin User Delete Fix › should handle invalid user list response gracefully (698ms)
+
+  2 passed (4.2s)

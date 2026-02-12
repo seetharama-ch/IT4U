@@ -1,0 +1,1664 @@
+16:53:56,116 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+16:53:56,119 |-INFO in ch.qos.logback.classic.util.ContextInitializer@17aad511 - Here is a list of configurators discovered as a service, by rank: 
+16:53:56,119 |-INFO in ch.qos.logback.classic.util.ContextInitializer@17aad511 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:53:56,119 |-INFO in ch.qos.logback.classic.util.ContextInitializer@17aad511 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+16:53:56,119 |-INFO in ch.qos.logback.classic.util.ContextInitializer@17aad511 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:53:56,123 |-INFO in ch.qos.logback.classic.util.ContextInitializer@17aad511 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:53:56,123 |-INFO in ch.qos.logback.classic.util.ContextInitializer@17aad511 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:53:56,124 |-INFO in ch.qos.logback.classic.util.ContextInitializer@17aad511 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:53:56,127 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+16:53:56,128 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+16:53:56,128 |-INFO in ch.qos.logback.classic.util.ContextInitializer@17aad511 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 4 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:53:56,128 |-INFO in ch.qos.logback.classic.util.ContextInitializer@17aad511 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:53:56,129 |-INFO in ch.qos.logback.classic.util.ContextInitializer@17aad511 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:53:56,130 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:53:56,131 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+16:53:56,132 |-INFO in ch.qos.logback.classic.util.ContextInitializer@17aad511 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 3 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:53:56,134 |-INFO in ch.qos.logback.classic.util.ContextInitializer@17aad511 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+16:53:56,140 |-INFO in ch.qos.logback.classic.util.ContextInitializer@17aad511 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+16:53:56,140 |-INFO in ch.qos.logback.classic.BasicConfigurator@487db668 - Setting up default configuration.
+16:53:56,172 |-INFO in ch.qos.logback.classic.util.ContextInitializer@17aad511 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 32 milliseconds. ExecutionStatus=NEUTRAL
+16:53:56,742 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@46944ca9 - URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/logback-spring.xml] is not of type file
+16:53:56,863 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+16:53:56,863 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:53:56,869 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:53:56,891 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ROLLING_FILE]
+16:53:56,891 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:53:56,902 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:53:56,911 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@582666172 - setting totalSizeCap to 2 GB
+16:53:56,921 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@582666172 - Will use gz compression
+16:53:56,923 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@582666172 - Will use the pattern logs/it4u.%d{yyyy-MM-dd}.%i.log for the active file
+16:53:56,949 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@63798ca7 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/it4u.%d{yyyy-MM-dd}.%i.log.gz'.
+16:53:56,949 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@63798ca7 - Roll-over at midnight.
+16:53:56,958 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@63798ca7 - Setting initial period to 2026-01-12T16:53:56.958Z
+16:53:56,962 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@63798ca7 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+16:53:56,962 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@63798ca7 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+16:53:56,971 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - Active log file name: logs/it4u.log
+16:53:56,971 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - File property is set to [logs/it4u.log]
+16:53:56,974 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+16:53:56,974 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4612b856 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+16:53:56,975 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+16:53:56,975 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ROLLING_FILE] to Logger[ROOT]
+16:53:56,975 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.gsg.it4u] to DEBUG
+16:53:56,975 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4612b856 - Propagating DEBUG level on Logger[com.gsg.it4u] onto the JUL framework
+16:53:56,975 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to INFO
+16:53:56,975 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4612b856 - Propagating INFO level on Logger[org.springframework] onto the JUL framework
+16:53:56,975 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
+16:53:56,975 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4612b856 - Propagating INFO level on Logger[org.hibernate] onto the JUL framework
+16:53:56,975 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@22875539 - End of configuration.
+16:53:56,975 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@5674e1f2 - Registering current configuration as safe fallback point
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-01-12 16:53:57.045 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-01-12 16:53:57.099 INFO  [main] com.gsg.it4u.It4uApplication - Starting It4uApplication v1.4.1 using Java 17.0.17 with PID 7 (/app/app.jar started by root in /app)
+2026-01-12 16:53:57.100 INFO  [main] com.gsg.it4u.It4uApplication - The following 1 profile is active: "docker"
+2026-01-12 16:53:59.255 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-12 16:53:59.341 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 8 JPA repository interfaces.
+2026-01-12 16:54:00.421 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2026-01-12 16:54:00.431 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2026-01-12 16:54:00.435 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-12 16:54:00.435 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-01-12 16:54:00.493 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-12 16:54:00.493 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3207 ms
+2026-01-12 16:54:00.983 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:02.032 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:03.033 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:04.035 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:05.036 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:06.037 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:07.038 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:08.040 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:09.043 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:10.046 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2026-01-12 16:54:10.048 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-01-12 16:54:10.069 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-12 16:54:10.099 ERROR [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.gsg.it4u.It4uApplication.main(It4uApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 17 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 24 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:346)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 30 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	... 42 common frames omitted
+16:54:11,165 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+16:54:11,168 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Here is a list of configurators discovered as a service, by rank: 
+16:54:11,168 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:54:11,168 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+16:54:11,168 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:54:11,172 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:54:11,172 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:54:11,173 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:54:11,176 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+16:54:11,177 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+16:54:11,177 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 4 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:54:11,177 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:54:11,177 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:54:11,178 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:54:11,178 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+16:54:11,178 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:54:11,178 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+16:54:11,179 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+16:54:11,179 |-INFO in ch.qos.logback.classic.BasicConfigurator@22bac7bc - Setting up default configuration.
+16:54:11,191 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 12 milliseconds. ExecutionStatus=NEUTRAL
+16:54:11,580 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@63798ca7 - URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/logback-spring.xml] is not of type file
+16:54:11,643 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+16:54:11,643 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:54:11,646 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:54:11,657 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ROLLING_FILE]
+16:54:11,657 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:54:11,660 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:54:11,663 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - setting totalSizeCap to 2 GB
+16:54:11,666 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use gz compression
+16:54:11,667 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use the pattern logs/it4u.%d{yyyy-MM-dd}.%i.log for the active file
+16:54:11,683 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/it4u.%d{yyyy-MM-dd}.%i.log.gz'.
+16:54:11,683 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Roll-over at midnight.
+16:54:11,687 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Setting initial period to 2026-01-12T16:54:10.098Z
+16:54:11,687 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+16:54:11,687 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+16:54:11,691 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - Active log file name: logs/it4u.log
+16:54:11,691 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - File property is set to [logs/it4u.log]
+16:54:11,693 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+16:54:11,693 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+16:54:11,694 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+16:54:11,694 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ROLLING_FILE] to Logger[ROOT]
+16:54:11,694 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.gsg.it4u] to DEBUG
+16:54:11,694 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating DEBUG level on Logger[com.gsg.it4u] onto the JUL framework
+16:54:11,694 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to INFO
+16:54:11,694 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.springframework] onto the JUL framework
+16:54:11,694 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
+16:54:11,694 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.hibernate] onto the JUL framework
+16:54:11,694 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@79c7532f - End of configuration.
+16:54:11,694 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@2a448449 - Registering current configuration as safe fallback point
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-01-12 16:54:11.802 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-01-12 16:54:11.886 INFO  [main] com.gsg.it4u.It4uApplication - Starting It4uApplication v1.4.1 using Java 17.0.17 with PID 7 (/app/app.jar started by root in /app)
+2026-01-12 16:54:11.888 INFO  [main] com.gsg.it4u.It4uApplication - The following 1 profile is active: "docker"
+2026-01-12 16:54:13.386 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-12 16:54:13.466 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 8 JPA repository interfaces.
+2026-01-12 16:54:14.255 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2026-01-12 16:54:14.266 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2026-01-12 16:54:14.268 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-12 16:54:14.269 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-01-12 16:54:14.314 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-12 16:54:14.315 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2317 ms
+2026-01-12 16:54:14.863 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:15.916 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:16.917 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:17.919 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:18.920 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:19.921 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:20.922 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:21.924 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:22.928 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:23.932 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2026-01-12 16:54:23.937 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-01-12 16:54:23.958 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-12 16:54:23.976 ERROR [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.gsg.it4u.It4uApplication.main(It4uApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 17 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 24 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:346)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 30 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	... 42 common frames omitted
+16:54:24,788 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+16:54:24,792 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Here is a list of configurators discovered as a service, by rank: 
+16:54:24,792 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:54:24,792 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+16:54:24,792 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:54:24,796 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:54:24,796 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:54:24,797 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:54:24,798 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+16:54:24,799 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+16:54:24,799 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 2 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:54:24,799 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:54:24,799 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:54:24,800 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:54:24,800 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+16:54:24,800 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:54:24,800 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+16:54:24,802 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+16:54:24,802 |-INFO in ch.qos.logback.classic.BasicConfigurator@22bac7bc - Setting up default configuration.
+16:54:24,815 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 13 milliseconds. ExecutionStatus=NEUTRAL
+16:54:25,206 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@63798ca7 - URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/logback-spring.xml] is not of type file
+16:54:25,272 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+16:54:25,272 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:54:25,277 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:54:25,288 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ROLLING_FILE]
+16:54:25,288 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:54:25,290 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:54:25,296 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - setting totalSizeCap to 2 GB
+16:54:25,300 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use gz compression
+16:54:25,300 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use the pattern logs/it4u.%d{yyyy-MM-dd}.%i.log for the active file
+16:54:25,318 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/it4u.%d{yyyy-MM-dd}.%i.log.gz'.
+16:54:25,318 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Roll-over at midnight.
+16:54:25,322 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Setting initial period to 2026-01-12T16:54:23.974Z
+16:54:25,322 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+16:54:25,322 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+16:54:25,328 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - Active log file name: logs/it4u.log
+16:54:25,328 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - File property is set to [logs/it4u.log]
+16:54:25,329 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+16:54:25,329 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+16:54:25,330 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+16:54:25,330 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ROLLING_FILE] to Logger[ROOT]
+16:54:25,330 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.gsg.it4u] to DEBUG
+16:54:25,330 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating DEBUG level on Logger[com.gsg.it4u] onto the JUL framework
+16:54:25,330 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to INFO
+16:54:25,330 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.springframework] onto the JUL framework
+16:54:25,330 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
+16:54:25,330 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.hibernate] onto the JUL framework
+16:54:25,330 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@79c7532f - End of configuration.
+16:54:25,330 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@2a448449 - Registering current configuration as safe fallback point
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-01-12 16:54:25.399 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-01-12 16:54:25.450 INFO  [main] com.gsg.it4u.It4uApplication - Starting It4uApplication v1.4.1 using Java 17.0.17 with PID 7 (/app/app.jar started by root in /app)
+2026-01-12 16:54:25.450 INFO  [main] com.gsg.it4u.It4uApplication - The following 1 profile is active: "docker"
+2026-01-12 16:54:26.859 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-12 16:54:26.961 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94 ms. Found 8 JPA repository interfaces.
+2026-01-12 16:54:27.663 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2026-01-12 16:54:27.671 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2026-01-12 16:54:27.673 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-12 16:54:27.673 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-01-12 16:54:27.707 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-12 16:54:27.708 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2160 ms
+2026-01-12 16:54:28.110 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:29.151 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:30.152 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:31.154 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:32.159 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:33.160 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:34.162 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:35.163 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:36.167 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:37.172 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2026-01-12 16:54:37.176 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-01-12 16:54:37.196 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-12 16:54:37.212 ERROR [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.gsg.it4u.It4uApplication.main(It4uApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 17 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 24 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:346)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 30 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	... 42 common frames omitted
+16:54:38,109 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+16:54:38,113 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Here is a list of configurators discovered as a service, by rank: 
+16:54:38,113 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:54:38,113 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+16:54:38,113 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:54:38,117 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:54:38,117 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:54:38,117 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:54:38,119 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+16:54:38,120 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+16:54:38,120 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 3 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:54:38,120 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:54:38,120 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:54:38,121 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:54:38,122 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+16:54:38,122 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 2 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:54:38,122 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+16:54:38,123 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+16:54:38,123 |-INFO in ch.qos.logback.classic.BasicConfigurator@22bac7bc - Setting up default configuration.
+16:54:38,136 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 13 milliseconds. ExecutionStatus=NEUTRAL
+16:54:38,564 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@63798ca7 - URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/logback-spring.xml] is not of type file
+16:54:38,622 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+16:54:38,622 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:54:38,625 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:54:38,636 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ROLLING_FILE]
+16:54:38,636 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:54:38,639 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:54:38,644 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - setting totalSizeCap to 2 GB
+16:54:38,650 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use gz compression
+16:54:38,650 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use the pattern logs/it4u.%d{yyyy-MM-dd}.%i.log for the active file
+16:54:38,667 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/it4u.%d{yyyy-MM-dd}.%i.log.gz'.
+16:54:38,667 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Roll-over at midnight.
+16:54:38,671 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Setting initial period to 2026-01-12T16:54:37.211Z
+16:54:38,672 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+16:54:38,672 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+16:54:38,677 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - Active log file name: logs/it4u.log
+16:54:38,677 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - File property is set to [logs/it4u.log]
+16:54:38,678 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+16:54:38,678 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+16:54:38,678 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+16:54:38,679 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ROLLING_FILE] to Logger[ROOT]
+16:54:38,679 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.gsg.it4u] to DEBUG
+16:54:38,679 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating DEBUG level on Logger[com.gsg.it4u] onto the JUL framework
+16:54:38,680 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to INFO
+16:54:38,680 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.springframework] onto the JUL framework
+16:54:38,680 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
+16:54:38,680 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.hibernate] onto the JUL framework
+16:54:38,680 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@79c7532f - End of configuration.
+16:54:38,680 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@2a448449 - Registering current configuration as safe fallback point
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-01-12 16:54:38.764 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-01-12 16:54:38.846 INFO  [main] com.gsg.it4u.It4uApplication - Starting It4uApplication v1.4.1 using Java 17.0.17 with PID 7 (/app/app.jar started by root in /app)
+2026-01-12 16:54:38.850 INFO  [main] com.gsg.it4u.It4uApplication - The following 1 profile is active: "docker"
+2026-01-12 16:54:40.593 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-12 16:54:40.684 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82 ms. Found 8 JPA repository interfaces.
+2026-01-12 16:54:41.518 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2026-01-12 16:54:41.528 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2026-01-12 16:54:41.530 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-12 16:54:41.530 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-01-12 16:54:41.569 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-12 16:54:41.569 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2555 ms
+2026-01-12 16:54:42.019 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:43.061 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:44.063 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:45.064 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:46.065 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:47.067 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:48.068 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:49.070 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:50.073 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:51.076 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2026-01-12 16:54:51.082 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-01-12 16:54:51.105 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-12 16:54:51.127 ERROR [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.gsg.it4u.It4uApplication.main(It4uApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 17 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 24 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:346)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 30 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	... 42 common frames omitted
+16:54:52,118 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+16:54:52,121 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Here is a list of configurators discovered as a service, by rank: 
+16:54:52,121 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:54:52,121 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+16:54:52,121 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:54:52,130 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:54:52,130 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:54:52,131 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:54:52,133 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+16:54:52,134 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+16:54:52,134 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 3 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:54:52,134 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:54:52,135 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:54:52,136 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:54:52,137 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+16:54:52,137 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 2 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:54:52,137 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+16:54:52,138 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+16:54:52,138 |-INFO in ch.qos.logback.classic.BasicConfigurator@22bac7bc - Setting up default configuration.
+16:54:52,167 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 29 milliseconds. ExecutionStatus=NEUTRAL
+16:54:52,792 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@63798ca7 - URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/logback-spring.xml] is not of type file
+16:54:52,920 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+16:54:52,920 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:54:52,924 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:54:52,940 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ROLLING_FILE]
+16:54:52,940 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:54:52,943 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:54:52,948 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - setting totalSizeCap to 2 GB
+16:54:52,956 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use gz compression
+16:54:52,957 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use the pattern logs/it4u.%d{yyyy-MM-dd}.%i.log for the active file
+16:54:52,978 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/it4u.%d{yyyy-MM-dd}.%i.log.gz'.
+16:54:52,978 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Roll-over at midnight.
+16:54:52,986 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Setting initial period to 2026-01-12T16:54:51.123Z
+16:54:52,987 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+16:54:52,987 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+16:54:52,995 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - Active log file name: logs/it4u.log
+16:54:52,995 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - File property is set to [logs/it4u.log]
+16:54:52,996 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+16:54:52,996 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+16:54:52,997 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+16:54:52,997 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ROLLING_FILE] to Logger[ROOT]
+16:54:52,997 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.gsg.it4u] to DEBUG
+16:54:52,997 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating DEBUG level on Logger[com.gsg.it4u] onto the JUL framework
+16:54:52,997 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to INFO
+16:54:52,997 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.springframework] onto the JUL framework
+16:54:52,998 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
+16:54:52,998 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.hibernate] onto the JUL framework
+16:54:52,998 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@79c7532f - End of configuration.
+16:54:52,998 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@2a448449 - Registering current configuration as safe fallback point
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-01-12 16:54:53.075 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-01-12 16:54:53.126 INFO  [main] com.gsg.it4u.It4uApplication - Starting It4uApplication v1.4.1 using Java 17.0.17 with PID 7 (/app/app.jar started by root in /app)
+2026-01-12 16:54:53.127 INFO  [main] com.gsg.it4u.It4uApplication - The following 1 profile is active: "docker"
+2026-01-12 16:54:54.422 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-12 16:54:54.497 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 8 JPA repository interfaces.
+2026-01-12 16:54:55.254 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2026-01-12 16:54:55.266 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2026-01-12 16:54:55.267 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-12 16:54:55.268 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-01-12 16:54:55.304 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-12 16:54:55.305 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2088 ms
+2026-01-12 16:54:55.701 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:56.744 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:57.746 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:58.748 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:54:59.749 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:00.751 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:01.752 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:02.753 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:03.757 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:04.762 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2026-01-12 16:55:04.765 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-01-12 16:55:04.791 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-12 16:55:04.815 ERROR [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.gsg.it4u.It4uApplication.main(It4uApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 17 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 24 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:346)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 30 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	... 42 common frames omitted
+16:55:05,589 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+16:55:05,593 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Here is a list of configurators discovered as a service, by rank: 
+16:55:05,593 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:55:05,593 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+16:55:05,593 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:55:05,597 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:55:05,597 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:55:05,597 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:55:05,599 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+16:55:05,600 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+16:55:05,600 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 3 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:55:05,600 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:55:05,600 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:55:05,601 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:55:05,601 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+16:55:05,601 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:55:05,601 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+16:55:05,602 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+16:55:05,602 |-INFO in ch.qos.logback.classic.BasicConfigurator@22bac7bc - Setting up default configuration.
+16:55:05,618 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 16 milliseconds. ExecutionStatus=NEUTRAL
+16:55:06,066 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@63798ca7 - URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/logback-spring.xml] is not of type file
+16:55:06,128 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+16:55:06,128 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:55:06,131 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:55:06,143 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ROLLING_FILE]
+16:55:06,143 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:55:06,146 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:55:06,149 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - setting totalSizeCap to 2 GB
+16:55:06,152 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use gz compression
+16:55:06,153 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use the pattern logs/it4u.%d{yyyy-MM-dd}.%i.log for the active file
+16:55:06,169 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/it4u.%d{yyyy-MM-dd}.%i.log.gz'.
+16:55:06,169 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Roll-over at midnight.
+16:55:06,173 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Setting initial period to 2026-01-12T16:55:04.815Z
+16:55:06,174 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+16:55:06,174 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+16:55:06,178 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - Active log file name: logs/it4u.log
+16:55:06,178 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - File property is set to [logs/it4u.log]
+16:55:06,179 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+16:55:06,179 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+16:55:06,180 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+16:55:06,180 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ROLLING_FILE] to Logger[ROOT]
+16:55:06,180 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.gsg.it4u] to DEBUG
+16:55:06,180 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating DEBUG level on Logger[com.gsg.it4u] onto the JUL framework
+16:55:06,180 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to INFO
+16:55:06,180 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.springframework] onto the JUL framework
+16:55:06,180 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
+16:55:06,180 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.hibernate] onto the JUL framework
+16:55:06,180 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@79c7532f - End of configuration.
+16:55:06,180 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@2a448449 - Registering current configuration as safe fallback point
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-01-12 16:55:06.235 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-01-12 16:55:06.285 INFO  [main] com.gsg.it4u.It4uApplication - Starting It4uApplication v1.4.1 using Java 17.0.17 with PID 7 (/app/app.jar started by root in /app)
+2026-01-12 16:55:06.286 INFO  [main] com.gsg.it4u.It4uApplication - The following 1 profile is active: "docker"
+2026-01-12 16:55:08.078 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-12 16:55:08.149 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 8 JPA repository interfaces.
+2026-01-12 16:55:08.875 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2026-01-12 16:55:08.883 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2026-01-12 16:55:08.885 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-12 16:55:08.886 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-01-12 16:55:08.923 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-12 16:55:08.925 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2518 ms
+2026-01-12 16:55:09.349 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:10.384 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:11.385 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:12.387 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:13.388 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:14.390 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:15.391 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:16.392 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:17.395 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:18.399 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2026-01-12 16:55:18.403 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-01-12 16:55:18.427 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-12 16:55:18.446 ERROR [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.gsg.it4u.It4uApplication.main(It4uApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 17 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 24 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:346)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 30 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	... 42 common frames omitted
+16:55:19,235 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+16:55:19,238 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Here is a list of configurators discovered as a service, by rank: 
+16:55:19,238 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:55:19,238 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+16:55:19,238 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:55:19,246 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:55:19,246 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:55:19,247 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:55:19,249 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+16:55:19,249 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+16:55:19,249 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 2 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:55:19,249 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:55:19,250 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:55:19,250 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:55:19,251 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+16:55:19,251 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:55:19,251 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+16:55:19,252 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+16:55:19,252 |-INFO in ch.qos.logback.classic.BasicConfigurator@22bac7bc - Setting up default configuration.
+16:55:19,266 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 14 milliseconds. ExecutionStatus=NEUTRAL
+16:55:19,649 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@63798ca7 - URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/logback-spring.xml] is not of type file
+16:55:19,716 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+16:55:19,716 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:55:19,720 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:55:19,733 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ROLLING_FILE]
+16:55:19,733 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:55:19,735 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:55:19,738 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - setting totalSizeCap to 2 GB
+16:55:19,742 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use gz compression
+16:55:19,743 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use the pattern logs/it4u.%d{yyyy-MM-dd}.%i.log for the active file
+16:55:19,759 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/it4u.%d{yyyy-MM-dd}.%i.log.gz'.
+16:55:19,759 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Roll-over at midnight.
+16:55:19,763 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Setting initial period to 2026-01-12T16:55:18.444Z
+16:55:19,763 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+16:55:19,763 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+16:55:19,767 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - Active log file name: logs/it4u.log
+16:55:19,767 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - File property is set to [logs/it4u.log]
+16:55:19,768 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+16:55:19,768 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+16:55:19,769 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+16:55:19,769 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ROLLING_FILE] to Logger[ROOT]
+16:55:19,769 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.gsg.it4u] to DEBUG
+16:55:19,769 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating DEBUG level on Logger[com.gsg.it4u] onto the JUL framework
+16:55:19,769 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to INFO
+16:55:19,769 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.springframework] onto the JUL framework
+16:55:19,769 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
+16:55:19,769 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.hibernate] onto the JUL framework
+16:55:19,769 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@79c7532f - End of configuration.
+16:55:19,769 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@2a448449 - Registering current configuration as safe fallback point
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-01-12 16:55:19.829 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-01-12 16:55:19.876 INFO  [main] com.gsg.it4u.It4uApplication - Starting It4uApplication v1.4.1 using Java 17.0.17 with PID 7 (/app/app.jar started by root in /app)
+2026-01-12 16:55:19.877 INFO  [main] com.gsg.it4u.It4uApplication - The following 1 profile is active: "docker"
+2026-01-12 16:55:21.283 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-12 16:55:21.356 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 8 JPA repository interfaces.
+2026-01-12 16:55:22.313 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2026-01-12 16:55:22.321 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2026-01-12 16:55:22.323 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-12 16:55:22.323 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-01-12 16:55:22.362 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-12 16:55:22.363 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2397 ms
+2026-01-12 16:55:22.860 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:23.931 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:24.933 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:25.935 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:26.937 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:27.938 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:28.939 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:29.940 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:30.944 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:31.948 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2026-01-12 16:55:31.950 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-01-12 16:55:31.964 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-12 16:55:31.979 ERROR [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.gsg.it4u.It4uApplication.main(It4uApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 17 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 24 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:346)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 30 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	... 42 common frames omitted
+16:55:32,949 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+16:55:32,952 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Here is a list of configurators discovered as a service, by rank: 
+16:55:32,952 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:55:32,952 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+16:55:32,952 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:55:32,958 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:55:32,959 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:55:32,959 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:55:32,962 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+16:55:32,962 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+16:55:32,962 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 3 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:55:32,962 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:55:32,963 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:55:32,964 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:55:32,964 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+16:55:32,964 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:55:32,964 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+16:55:32,965 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+16:55:32,965 |-INFO in ch.qos.logback.classic.BasicConfigurator@22bac7bc - Setting up default configuration.
+16:55:32,981 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 16 milliseconds. ExecutionStatus=NEUTRAL
+16:55:33,462 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@63798ca7 - URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/logback-spring.xml] is not of type file
+16:55:33,545 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+16:55:33,545 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:55:33,548 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:55:33,560 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ROLLING_FILE]
+16:55:33,560 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:55:33,563 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:55:33,566 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - setting totalSizeCap to 2 GB
+16:55:33,570 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use gz compression
+16:55:33,571 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use the pattern logs/it4u.%d{yyyy-MM-dd}.%i.log for the active file
+16:55:33,588 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/it4u.%d{yyyy-MM-dd}.%i.log.gz'.
+16:55:33,588 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Roll-over at midnight.
+16:55:33,593 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Setting initial period to 2026-01-12T16:55:31.980Z
+16:55:33,594 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+16:55:33,594 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+16:55:33,599 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - Active log file name: logs/it4u.log
+16:55:33,599 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - File property is set to [logs/it4u.log]
+16:55:33,600 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+16:55:33,600 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+16:55:33,601 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+16:55:33,601 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ROLLING_FILE] to Logger[ROOT]
+16:55:33,601 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.gsg.it4u] to DEBUG
+16:55:33,601 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating DEBUG level on Logger[com.gsg.it4u] onto the JUL framework
+16:55:33,601 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to INFO
+16:55:33,601 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.springframework] onto the JUL framework
+16:55:33,601 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
+16:55:33,601 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.hibernate] onto the JUL framework
+16:55:33,601 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@79c7532f - End of configuration.
+16:55:33,601 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@2a448449 - Registering current configuration as safe fallback point
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-01-12 16:55:33.662 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-01-12 16:55:33.720 INFO  [main] com.gsg.it4u.It4uApplication - Starting It4uApplication v1.4.1 using Java 17.0.17 with PID 7 (/app/app.jar started by root in /app)
+2026-01-12 16:55:33.721 INFO  [main] com.gsg.it4u.It4uApplication - The following 1 profile is active: "docker"
+2026-01-12 16:55:35.604 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-12 16:55:35.715 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 98 ms. Found 8 JPA repository interfaces.
+2026-01-12 16:55:36.673 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2026-01-12 16:55:36.682 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2026-01-12 16:55:36.683 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-12 16:55:36.684 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-01-12 16:55:36.718 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-12 16:55:36.718 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2884 ms
+2026-01-12 16:55:37.218 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:38.261 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:39.263 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:40.264 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:41.266 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:42.267 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:43.269 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:44.270 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:45.274 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:46.278 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2026-01-12 16:55:46.285 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-01-12 16:55:46.312 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-12 16:55:46.330 ERROR [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.gsg.it4u.It4uApplication.main(It4uApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 17 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 24 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:346)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 30 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	... 42 common frames omitted
+16:55:47,347 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+16:55:47,356 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Here is a list of configurators discovered as a service, by rank: 
+16:55:47,359 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:55:47,359 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+16:55:47,359 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:55:47,364 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 2 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:55:47,364 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:55:47,365 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:55:47,366 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+16:55:47,367 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+16:55:47,367 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 2 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:55:47,367 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:55:47,367 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:55:47,368 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:55:47,368 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+16:55:47,368 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:55:47,368 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+16:55:47,375 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+16:55:47,375 |-INFO in ch.qos.logback.classic.BasicConfigurator@22bac7bc - Setting up default configuration.
+16:55:47,403 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 28 milliseconds. ExecutionStatus=NEUTRAL
+16:55:47,861 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@63798ca7 - URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/logback-spring.xml] is not of type file
+16:55:47,923 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+16:55:47,923 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:55:47,928 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:55:47,940 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ROLLING_FILE]
+16:55:47,940 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:55:47,943 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:55:47,947 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - setting totalSizeCap to 2 GB
+16:55:47,955 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use gz compression
+16:55:47,956 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use the pattern logs/it4u.%d{yyyy-MM-dd}.%i.log for the active file
+16:55:47,972 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/it4u.%d{yyyy-MM-dd}.%i.log.gz'.
+16:55:47,972 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Roll-over at midnight.
+16:55:47,978 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Setting initial period to 2026-01-12T16:55:46.328Z
+16:55:47,979 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+16:55:47,979 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+16:55:47,984 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - Active log file name: logs/it4u.log
+16:55:47,984 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - File property is set to [logs/it4u.log]
+16:55:47,988 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+16:55:47,988 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+16:55:47,989 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+16:55:47,989 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ROLLING_FILE] to Logger[ROOT]
+16:55:47,989 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.gsg.it4u] to DEBUG
+16:55:47,989 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating DEBUG level on Logger[com.gsg.it4u] onto the JUL framework
+16:55:47,989 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to INFO
+16:55:47,989 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.springframework] onto the JUL framework
+16:55:47,989 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
+16:55:47,989 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.hibernate] onto the JUL framework
+16:55:47,989 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@79c7532f - End of configuration.
+16:55:47,989 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@2a448449 - Registering current configuration as safe fallback point
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-01-12 16:55:48.054 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-01-12 16:55:48.106 INFO  [main] com.gsg.it4u.It4uApplication - Starting It4uApplication v1.4.1 using Java 17.0.17 with PID 6 (/app/app.jar started by root in /app)
+2026-01-12 16:55:48.107 INFO  [main] com.gsg.it4u.It4uApplication - The following 1 profile is active: "docker"
+16:55:49,244 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+16:55:49,247 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Here is a list of configurators discovered as a service, by rank: 
+16:55:49,247 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:55:49,247 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+16:55:49,247 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:55:49,251 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:55:49,251 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:55:49,251 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:55:49,253 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+16:55:49,254 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+16:55:49,254 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 3 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:55:49,254 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:55:49,254 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:55:49,255 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:55:49,255 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+16:55:49,255 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:55:49,255 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+16:55:49,256 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+16:55:49,256 |-INFO in ch.qos.logback.classic.BasicConfigurator@22bac7bc - Setting up default configuration.
+16:55:49,268 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 12 milliseconds. ExecutionStatus=NEUTRAL
+16:55:49,617 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@63798ca7 - URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/logback-spring.xml] is not of type file
+16:55:49,675 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+16:55:49,675 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:55:49,678 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:55:49,687 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ROLLING_FILE]
+16:55:49,687 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:55:49,690 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:55:49,693 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - setting totalSizeCap to 2 GB
+16:55:49,697 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use gz compression
+16:55:49,697 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use the pattern logs/it4u.%d{yyyy-MM-dd}.%i.log for the active file
+16:55:49,716 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/it4u.%d{yyyy-MM-dd}.%i.log.gz'.
+16:55:49,716 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Roll-over at midnight.
+16:55:49,720 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Setting initial period to 2026-01-12T16:55:48.100Z
+16:55:49,721 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+16:55:49,721 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+16:55:49,727 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - Active log file name: logs/it4u.log
+16:55:49,727 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - File property is set to [logs/it4u.log]
+16:55:49,728 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+16:55:49,728 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+16:55:49,729 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+16:55:49,729 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ROLLING_FILE] to Logger[ROOT]
+16:55:49,729 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.gsg.it4u] to DEBUG
+16:55:49,729 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating DEBUG level on Logger[com.gsg.it4u] onto the JUL framework
+16:55:49,729 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to INFO
+16:55:49,729 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.springframework] onto the JUL framework
+16:55:49,729 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
+16:55:49,729 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.hibernate] onto the JUL framework
+16:55:49,729 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@79c7532f - End of configuration.
+16:55:49,729 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@2a448449 - Registering current configuration as safe fallback point
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-01-12 16:55:49.789 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-01-12 16:55:49.846 INFO  [main] com.gsg.it4u.It4uApplication - Starting It4uApplication v1.4.1 using Java 17.0.17 with PID 7 (/app/app.jar started by root in /app)
+2026-01-12 16:55:49.850 INFO  [main] com.gsg.it4u.It4uApplication - The following 1 profile is active: "docker"
+2026-01-12 16:55:51.533 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-12 16:55:51.601 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 8 JPA repository interfaces.
+2026-01-12 16:55:52.415 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2026-01-12 16:55:52.425 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2026-01-12 16:55:52.431 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-12 16:55:52.431 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-01-12 16:55:52.492 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-12 16:55:52.493 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2498 ms
+2026-01-12 16:55:52.896 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:53.934 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:54.935 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:55.936 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:56.938 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:57.940 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:58.942 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:55:59.943 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:56:00.945 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:56:01.950 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2026-01-12 16:56:01.953 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-01-12 16:56:01.977 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-12 16:56:01.995 ERROR [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.gsg.it4u.It4uApplication.main(It4uApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	... 17 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:72)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:134)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:147)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 24 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:346)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	... 30 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	... 42 common frames omitted
+16:56:02,775 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+16:56:02,777 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Here is a list of configurators discovered as a service, by rank: 
+16:56:02,778 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:56:02,778 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+16:56:02,778 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:56:02,781 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:56:02,781 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:56:02,782 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:56:02,784 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+16:56:02,784 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+16:56:02,784 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 2 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:56:02,784 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:56:02,785 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:56:02,785 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:56:02,786 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+16:56:02,786 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:56:02,786 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+16:56:02,787 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+16:56:02,787 |-INFO in ch.qos.logback.classic.BasicConfigurator@22bac7bc - Setting up default configuration.
+16:56:02,800 |-INFO in ch.qos.logback.classic.util.ContextInitializer@46944ca9 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 13 milliseconds. ExecutionStatus=NEUTRAL
+16:56:03,159 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@63798ca7 - URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/logback-spring.xml] is not of type file
+16:56:03,220 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+16:56:03,220 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:56:03,225 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:56:03,237 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ROLLING_FILE]
+16:56:03,237 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:56:03,241 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:56:03,245 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - setting totalSizeCap to 2 GB
+16:56:03,248 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use gz compression
+16:56:03,249 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1175631958 - Will use the pattern logs/it4u.%d{yyyy-MM-dd}.%i.log for the active file
+16:56:03,266 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/it4u.%d{yyyy-MM-dd}.%i.log.gz'.
+16:56:03,266 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Roll-over at midnight.
+16:56:03,271 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - Setting initial period to 2026-01-12T16:56:01.992Z
+16:56:03,271 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+16:56:03,271 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22875539 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+16:56:03,277 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - Active log file name: logs/it4u.log
+16:56:03,277 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING_FILE] - File property is set to [logs/it4u.log]
+16:56:03,278 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+16:56:03,278 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+16:56:03,279 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+16:56:03,279 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ROLLING_FILE] to Logger[ROOT]
+16:56:03,279 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.gsg.it4u] to DEBUG
+16:56:03,279 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating DEBUG level on Logger[com.gsg.it4u] onto the JUL framework
+16:56:03,279 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to INFO
+16:56:03,279 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.springframework] onto the JUL framework
+16:56:03,279 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to INFO
+16:56:03,279 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@5674e1f2 - Propagating INFO level on Logger[org.hibernate] onto the JUL framework
+16:56:03,279 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@79c7532f - End of configuration.
+16:56:03,279 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@2a448449 - Registering current configuration as safe fallback point
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-01-12 16:56:03.336 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-01-12 16:56:03.383 INFO  [main] com.gsg.it4u.It4uApplication - Starting It4uApplication v1.4.1 using Java 17.0.17 with PID 7 (/app/app.jar started by root in /app)
+2026-01-12 16:56:03.384 INFO  [main] com.gsg.it4u.It4uApplication - The following 1 profile is active: "docker"
+2026-01-12 16:56:04.741 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-12 16:56:04.825 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 8 JPA repository interfaces.
+2026-01-12 16:56:05.732 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2026-01-12 16:56:05.743 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2026-01-12 16:56:05.747 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-12 16:56:05.747 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-01-12 16:56:05.799 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-12 16:56:05.800 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2318 ms
+2026-01-12 16:56:06.238 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-12 16:56:07.282 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...

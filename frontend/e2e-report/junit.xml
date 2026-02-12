@@ -1,0 +1,392 @@
+<testsuites id="" name="" tests="4" failures="4" skipped="0" errors="0" time="391.64237799999995">
+<testsuite name="it4u.e2e.spec.ts" timestamp="2026-01-08T02:57:22.260Z" hostname="chromium" tests="4" failures="4" skipped="0" time="384.885" errors="0">
+<testcase name="IT4U E2E - Ticket Flow + Attachments + Admin Delete › Employee creates ticket with attachment (Issue 11 validation)" classname="it4u.e2e.spec.ts" time="98.415">
+<failure message="it4u.e2e.spec.ts:9:5 Employee creates ticket with attachment (Issue 11 validation)" type="FAILURE">
+<![CDATA[  [chromium] › it4u.e2e.spec.ts:9:5 › IT4U E2E - Ticket Flow + Attachments + Admin Delete › Employee creates ticket with attachment (Issue 11 validation) 
+
+    TimeoutError: page.waitForNavigation: Timeout 45000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation until "networkidle"
+    ============================================================
+
+       at ..\helpers\auth.ts:13
+
+      11 |
+      12 |     await Promise.all([
+    > 13 |         page.waitForNavigation({ waitUntil: "networkidle" }),
+         |              ^
+      14 |         page.getByRole("button", { name: /login|sign in/i }).click(),
+      15 |     ]);
+      16 |
+        at login (D:\Workspace\gsg-IT4U\frontend\e2e\helpers\auth.ts:13:14)
+        at D:\Workspace\gsg-IT4U\frontend\e2e\specs\it4u.e2e.spec.ts:10:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: page.waitForNavigation: Timeout 45000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation until "networkidle"
+    ============================================================
+
+       at ..\helpers\auth.ts:13
+
+      11 |
+      12 |     await Promise.all([
+    > 13 |         page.waitForNavigation({ waitUntil: "networkidle" }),
+         |              ^
+      14 |         page.getByRole("button", { name: /login|sign in/i }).click(),
+      15 |     ]);
+      16 |
+        at login (D:\Workspace\gsg-IT4U\frontend\e2e\helpers\auth.ts:13:14)
+        at D:\Workspace\gsg-IT4U\frontend\e2e\specs\it4u.e2e.spec.ts:10:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium\trace.zip]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-f9942-chment-Issue-11-validation--chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="IT4U E2E - Ticket Flow + Attachments + Admin Delete › Manager can view attachment + approve (Issue 11 validation)" classname="it4u.e2e.spec.ts" time="95.535">
+<failure message="it4u.e2e.spec.ts:24:5 Manager can view attachment + approve (Issue 11 validation)" type="FAILURE">
+<![CDATA[  [chromium] › it4u.e2e.spec.ts:24:5 › IT4U E2E - Ticket Flow + Attachments + Admin Delete › Manager can view attachment + approve (Issue 11 validation) 
+
+    TimeoutError: page.waitForNavigation: Timeout 45000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation until "networkidle"
+    ============================================================
+
+       at ..\helpers\auth.ts:13
+
+      11 |
+      12 |     await Promise.all([
+    > 13 |         page.waitForNavigation({ waitUntil: "networkidle" }),
+         |              ^
+      14 |         page.getByRole("button", { name: /login|sign in/i }).click(),
+      15 |     ]);
+      16 |
+        at login (D:\Workspace\gsg-IT4U\frontend\e2e\helpers\auth.ts:13:14)
+        at D:\Workspace\gsg-IT4U\frontend\e2e\specs\it4u.e2e.spec.ts:25:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: page.waitForNavigation: Timeout 45000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation until "networkidle"
+    ============================================================
+
+       at ..\helpers\auth.ts:13
+
+      11 |
+      12 |     await Promise.all([
+    > 13 |         page.waitForNavigation({ waitUntil: "networkidle" }),
+         |              ^
+      14 |         page.getByRole("button", { name: /login|sign in/i }).click(),
+      15 |     ]);
+      16 |
+        at login (D:\Workspace\gsg-IT4U\frontend\e2e\helpers\auth.ts:13:14)
+        at D:\Workspace\gsg-IT4U\frontend\e2e\specs\it4u.e2e.spec.ts:25:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium\trace.zip]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-4b4c7-pprove-Issue-11-validation--chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="IT4U E2E - Ticket Flow + Attachments + Admin Delete › IT Support can view attachment + move ticket status" classname="it4u.e2e.spec.ts" time="95.499">
+<failure message="it4u.e2e.spec.ts:43:5 IT Support can view attachment + move ticket status" type="FAILURE">
+<![CDATA[  [chromium] › it4u.e2e.spec.ts:43:5 › IT4U E2E - Ticket Flow + Attachments + Admin Delete › IT Support can view attachment + move ticket status 
+
+    TimeoutError: page.waitForNavigation: Timeout 45000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation until "networkidle"
+    ============================================================
+
+       at ..\helpers\auth.ts:13
+
+      11 |
+      12 |     await Promise.all([
+    > 13 |         page.waitForNavigation({ waitUntil: "networkidle" }),
+         |              ^
+      14 |         page.getByRole("button", { name: /login|sign in/i }).click(),
+      15 |     ]);
+      16 |
+        at login (D:\Workspace\gsg-IT4U\frontend\e2e\helpers\auth.ts:13:14)
+        at D:\Workspace\gsg-IT4U\frontend\e2e\specs\it4u.e2e.spec.ts:44:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: page.waitForNavigation: Timeout 45000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation until "networkidle"
+    ============================================================
+
+       at ..\helpers\auth.ts:13
+
+      11 |
+      12 |     await Promise.all([
+    > 13 |         page.waitForNavigation({ waitUntil: "networkidle" }),
+         |              ^
+      14 |         page.getByRole("button", { name: /login|sign in/i }).click(),
+      15 |     ]);
+      16 |
+        at login (D:\Workspace\gsg-IT4U\frontend\e2e\helpers\auth.ts:13:14)
+        at D:\Workspace\gsg-IT4U\frontend\e2e\specs\it4u.e2e.spec.ts:44:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium\trace.zip]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-950be-tachment-move-ticket-status-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="IT4U E2E - Ticket Flow + Attachments + Admin Delete › Admin deletes ticket WITHOUT blank screen (Issue 10 validation)" classname="it4u.e2e.spec.ts" time="95.436">
+<failure message="it4u.e2e.spec.ts:72:5 Admin deletes ticket WITHOUT blank screen (Issue 10 validation)" type="FAILURE">
+<![CDATA[  [chromium] › it4u.e2e.spec.ts:72:5 › IT4U E2E - Ticket Flow + Attachments + Admin Delete › Admin deletes ticket WITHOUT blank screen (Issue 10 validation) 
+
+    TimeoutError: page.waitForNavigation: Timeout 45000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation until "networkidle"
+    ============================================================
+
+       at ..\helpers\auth.ts:13
+
+      11 |
+      12 |     await Promise.all([
+    > 13 |         page.waitForNavigation({ waitUntil: "networkidle" }),
+         |              ^
+      14 |         page.getByRole("button", { name: /login|sign in/i }).click(),
+      15 |     ]);
+      16 |
+        at login (D:\Workspace\gsg-IT4U\frontend\e2e\helpers\auth.ts:13:14)
+        at D:\Workspace\gsg-IT4U\frontend\e2e\specs\it4u.e2e.spec.ts:73:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: page.waitForNavigation: Timeout 45000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation until "networkidle"
+    ============================================================
+
+       at ..\helpers\auth.ts:13
+
+      11 |
+      12 |     await Promise.all([
+    > 13 |         page.waitForNavigation({ waitUntil: "networkidle" }),
+         |              ^
+      14 |         page.getByRole("button", { name: /login|sign in/i }).click(),
+      15 |     ]);
+      16 |
+        at login (D:\Workspace\gsg-IT4U\frontend\e2e\helpers\auth.ts:13:14)
+        at D:\Workspace\gsg-IT4U\frontend\e2e\specs\it4u.e2e.spec.ts:73:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium\trace.zip]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|..\test-results\it4u.e2e-IT4U-E2E---Ticket-46424-screen-Issue-10-validation--chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

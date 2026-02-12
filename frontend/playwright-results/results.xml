@@ -1,0 +1,53 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="34.77177">
+<testsuite name="issue8_manager_approved_it_support_flow.spec.ts" timestamp="2026-01-02T15:21:22.845Z" hostname="chromium" tests="1" failures="1" skipped="0" time="33.621" errors="0">
+<testcase name="Issue #8: Manager Approved Ticket &amp; IT Support Flow › Reproduction: Manager Approval -&gt; IT Support Visibility -&gt; Status Update 500 Check" classname="issue8_manager_approved_it_support_flow.spec.ts" time="33.621">
+<failure message="issue8_manager_approved_it_support_flow.spec.ts:15:5 Reproduction: Manager Approval -&gt; IT Support Visibility -&gt; Status Update 500 Check" type="FAILURE">
+<![CDATA[  [chromium] › issue8_manager_approved_it_support_flow.spec.ts:15:5 › Issue #8: Manager Approved Ticket & IT Support Flow › Reproduction: Manager Approval -> IT Support Visibility -> Status Update 500 Check 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected: "http://localhost:5173/app/employee"
+    Received: "http://localhost:5173/login"
+    Timeout:  30000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 30000ms
+        33 × unexpected value "http://localhost:5173/login"
+
+
+      42 |         await page.fill('input[name="password"]', password);
+      43 |         await page.click('button[type="submit"]');
+    > 44 |         await expect(page).toHaveURL('/app/employee');
+         |                            ^
+      45 |
+      46 |         // Create Ticket
+      47 |         await page.click('text=+ New Ticket');
+        at D:\Workspace\gsg-IT4U\frontend\e2e\issue8_manager_approved_it_support_flow.spec.ts:44:28
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\issue8_manager_approved_it-46ffb-y---Status-Update-500-Check-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\issue8_manager_approved_it-46ffb-y---Status-Update-500-Check-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\issue8_manager_approved_it-46ffb-y---Status-Update-500-Check-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\issue8_manager_approved_it-46ffb-y---Status-Update-500-Check-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\issue8_manager_approved_it-46ffb-y---Status-Update-500-Check-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\issue8_manager_approved_it-46ffb-y---Status-Update-500-Check-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-results\issue8_manager_approved_it-46ffb-y---Status-Update-500-Check-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

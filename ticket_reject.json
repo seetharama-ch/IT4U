@@ -1,0 +1,9 @@
+{
+    "title": "Reject Me",
+    "description": "Please reject this ticket.",
+    "category": "HARDWARE",
+    "priority": "LOW",
+    "requester": {
+        "id": 3
+    }
+}

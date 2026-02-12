@@ -1,0 +1,2 @@
+This is a test attachment file.
+It contains some text to verify content.

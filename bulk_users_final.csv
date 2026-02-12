@@ -1,0 +1,6 @@
+Username,Password,Role,Department,JobTitle,ManagerUsername
+HOD_User,Geosoft@1234,MANAGER,Engineering,HOD_Engineering,
+Team_Lead_User,Geosoft@1234,MANAGER,Engineering,Team_Lead,HOD_User
+Engineer_1,Geosoft@1234,EMPLOYEE,Engineering,Software Engineer,Team_Lead_User
+Engineer_2,Geosoft@1234,EMPLOYEE,Engineering,DevOps Engineer,Team_Lead_User
+IT_Support_User,Geosoft@1234,IT_SUPPORT,IT,IT Support Specialist,

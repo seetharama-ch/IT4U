@@ -1,0 +1,130 @@
+
+Running 2 tests using 1 worker
+
+  ✘  1 e2e\admin_ticket_delete_fix.spec.ts:17:5 › Admin Ticket Delete Fix › should delete ticket successfully and handle JSON response (30.6s)
+  ✘  2 e2e\admin_ticket_delete_fix.spec.ts:17:5 › Admin Ticket Delete Fix › should delete ticket successfully and handle JSON response (retry #1) (31.5s)
+Terminate batch job (Y/N)?   ✘  3 e2e\admin_ticket_delete_fix.spec.ts:17:5 › Admin Ticket Delete Fix › should delete ticket successfully and handle JSON response (retry #2) (31.2s)
+
+
+  1) e2e\admin_ticket_delete_fix.spec.ts:17:5 › Admin Ticket Delete Fix › should delete ticket successfully and handle JSON response 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByTestId('ticket-delete-btn').first()
+    Expected: visible
+    Timeout: 30000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 30000ms[22m
+    [2m  - waiting for getByTestId('ticket-delete-btn').first()[22m
+
+
+      52 |         // Wait for ticket to be visible
+      53 |         const deleteBtn = page.getByTestId('ticket-delete-btn').first();
+    > 54 |         await expect(deleteBtn).toBeVisible();
+         |                                 ^
+      55 |
+      56 |         // Setup listener for console errors to catch "Unexpected end of JSON input"
+      57 |         const consoleErrors = [];
+        at D:\Workspace\gsg-IT4U\frontend\e2e\admin_ticket_delete_fix.spec.ts:54:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByTestId('ticket-delete-btn').first()
+    Expected: visible
+    Timeout: 30000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 30000ms[22m
+    [2m  - waiting for getByTestId('ticket-delete-btn').first()[22m
+
+
+      52 |         // Wait for ticket to be visible
+      53 |         const deleteBtn = page.getByTestId('ticket-delete-btn').first();
+    > 54 |         await expect(deleteBtn).toBeVisible();
+         |                                 ^
+      55 |
+      56 |         // Setup listener for console errors to catch "Unexpected end of JSON input"
+      57 |         const consoleErrors = [];
+        at D:\Workspace\gsg-IT4U\frontend\e2e\admin_ticket_delete_fix.spec.ts:54:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByTestId('ticket-delete-btn').first()
+    Expected: visible
+    Timeout: 30000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 30000ms[22m
+    [2m  - waiting for getByTestId('ticket-delete-btn').first()[22m
+
+
+      52 |         // Wait for ticket to be visible
+      53 |         const deleteBtn = page.getByTestId('ticket-delete-btn').first();
+    > 54 |         await expect(deleteBtn).toBeVisible();
+         |                                 ^
+      55 |
+      56 |         // Setup listener for console errors to catch "Unexpected end of JSON input"
+      57 |         const consoleErrors = [];
+        at D:\Workspace\gsg-IT4U\frontend\e2e\admin_ticket_delete_fix.spec.ts:54:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response-retry2\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response-retry2\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\admin_ticket_delete_fix-Ad-3768d-ly-and-handle-JSON-response-retry2\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    e2e\admin_ticket_delete_fix.spec.ts:17:5 › Admin Ticket Delete Fix › should delete ticket successfully and handle JSON response 
+  1 did not run

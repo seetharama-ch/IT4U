@@ -1,0 +1,6 @@
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+java.exe                    133740 Console                    2   2,03,492 K
+java.exe                    125648 Console                    2      7,304 K
+java.exe                    134992 Console                    2   1,26,504 K

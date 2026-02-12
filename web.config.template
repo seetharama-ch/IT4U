@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <system.webServer>
+    <!-- Disable output caching for SPA -->
+    <caching enabled="false" enableKernelCache="false">
+      <profiles>
+        <add extension="*" policy="DontCache" kernelCachePolicy="DontCache" />
+      </profiles>
+    </caching>
+    
+    <!-- Disable client-side caching -->
+    <staticContent>
+      <clientCache cacheControlMode="DisableCache" />
+    </staticContent>
+    
+    <!-- URL Rewrite Rules: Proxy API requests FIRST, then SPA fallback -->
+    <rewrite>
+      <rules>
+        <!-- PRIORITY 1: Reverse proxy API requests to backend -->
+        <rule name="Reverse Proxy to Backend API" stopProcessing="true">
+          <match url="^api/(.*)" />
+          <action type="Rewrite" url="http://localhost:8060/api/{R:1}" />
+          <serverVariables>
+            <set name="HTTP_X_FORWARDED_PROTO" value="https" />
+            <set name="HTTP_X_FORWARDED_HOST" value="gsg-mecm" />
+          </serverVariables>
+        </rule>
+        
+        <!-- PRIORITY 2: Reverse proxy actuator requests to backend -->
+        <rule name="Reverse Proxy to Backend Actuator" stopProcessing="true">
+          <match url="^actuator/(.*)" />
+          <action type="Rewrite" url="http://localhost:8060/actuator/{R:1}" />
+          <serverVariables>
+            <set name="HTTP_X_FORWARDED_PROTO" value="https" />
+            <set name="HTTP_X_FORWARDED_HOST" value="gsg-mecm" />
+          </serverVariables>
+        </rule>
+
+        <!-- PRIORITY 3: SSO and OAuth2 Authorization -->
+        <rule name="Proxy SSO and Auth" stopProcessing="true">
+          <match url="^(oauth2|logout|error|auth|login/oauth2)(/.*)?$" ignoreCase="true" />
+          <action type="Rewrite" url="http://localhost:8060/{R:0}" />
+          <serverVariables>
+            <set name="HTTP_X_FORWARDED_PROTO" value="https" />
+            <set name="HTTP_X_FORWARDED_HOST" value="gsg-mecm" />
+          </serverVariables>
+        </rule>
+        
+        <!-- PRIORITY 4: SPA fallback - serve index.html for non-file routes -->
+        <rule name="React SPA Fallback" stopProcessing="true">
+          <match url=".*" />
+          <conditions logicalGrouping="MatchAll">
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+            <add input="{REQUEST_URI}" pattern="^/api" negate="true" ignoreCase="true" />
+            <add input="{REQUEST_URI}" pattern="^/actuator" negate="true" ignoreCase="true" />
+            <add input="{REQUEST_URI}" pattern="^/oauth2" negate="true" ignoreCase="true" />
+            <add input="{REQUEST_URI}" pattern="^/login/oauth2" negate="true" ignoreCase="true" />
+            <add input="{REQUEST_URI}" pattern="^/logout" negate="true" ignoreCase="true" />
+            <add input="{REQUEST_URI}" pattern="^/auth" negate="true" ignoreCase="true" />
+          </conditions>
+          <action type="Rewrite" url="/" />
+        </rule>
+      </rules>
+    </rewrite>
+  </system.webServer>
+</configuration>

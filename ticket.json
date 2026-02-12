@@ -1,0 +1,9 @@
+{
+    "title": "Test Ticket for Attachment Debug",
+    "description": "Debugging duplicate attachment issue",
+    "category": "OTHERS",
+    "priority": "LOW",
+    "requester": {
+        "username": "admin"
+    }
+}

@@ -1,0 +1,44 @@
+# Backend Endpoints (Inventory)
+
+| Method | Path | Source |
+|---|---|---|
+| GET | `/api/admin/reports/tickets` | Static |
+| GET | `/api/admin/reports/tickets/export` | Static |
+| GET | `/api/admin/reports/tickets/export/csv` | Static |
+| GET | `/api/admin/test-email` | Static |
+| PUT | `/api/admin/users/{id}/role` | Static |
+| POST | `/api/auth/login` | Static |
+| GET | `/api/auth/me` | Static |
+| POST | `/api/health-logs/check/{serviceNodeId}` | Static |
+| GET | `/api/health-logs/node/{serviceNodeId}` | Static |
+| GET | `/api/health-logs/node/{serviceNodeId}/critical-count` | Static |
+| GET | `/api/health-logs/node/{serviceNodeId}/recent` | Static |
+| GET | `/api/health-logs/stats/summary` | Static |
+| DELETE | `/api/kb/{id}` | Static |
+| GET | `/api/service-nodes/{id}` | Static |
+| PUT | `/api/service-nodes/{id}` | Static |
+| DELETE | `/api/service-nodes/{id}` | Static |
+| POST | `/api/service-nodes/{id}/health-check` | Static |
+| POST | `/api/service-nodes/bulk-health-check` | Static |
+| GET | `/api/service-nodes/environment/{environment}` | Static |
+| GET | `/api/service-nodes/health/{healthStatus}` | Static |
+| GET | `/api/service-nodes/node/{nodeId}` | Static |
+| GET | `/api/service-nodes/owner/{owner}` | Static |
+| GET | `/api/service-nodes/stats` | Static |
+| GET | `/api/service-nodes/stats/by-environment` | Static |
+| GET | `/api/service-nodes/stats/by-type` | Static |
+| GET | `/api/service-nodes/status/{status}` | Static |
+| GET | `/api/service-nodes/team/{team}` | Static |
+| GET | `/api/service-nodes/type/{nodeType}` | Static |
+| GET | `/api/tickets/{id}` | Static |
+| POST | `/api/tickets/{id}/attachments` | Static |
+| POST | `/api/tickets/{id}/comments` | Static |
+| GET | `/api/tickets/approvals` | Static |
+| GET | `/api/tickets/attachments/{filename:.+}` | Static |
+| GET | `/api/tickets/my` | Static |
+| DELETE | `/api/users/{id}` | Static |
+| PUT | `/api/users/{id}` | Static |
+| POST | `/api/users/{id}/reset-password` | Static |
+| GET | `/api/users/managers` | Static |
+| GET | `/api/users/template` | Static |
+| POST | `/api/users/upload` | Static |

@@ -1,0 +1,6 @@
+This is a test attachment file for E2E testing.
+It contains plain text content to verify upload/download functionality.
+
+Ticket: TBD
+Uploaded by: Automated Test
+Purpose: Validate attachment handling in production environment

@@ -1,0 +1,9 @@
+# E2E Testing Configuration
+# Inherits from application.properties, overrides specific E2E settings
+
+# Disable Notifications for E2E to prevent SMTP errors or dependency on mail server
+notifications.enabled=false
+it4u.mail.enabled=false
+
+# Use H2 in-memory DB or specific E2E DB if needed (but currently using 'e2e' profile usually implies this)
+# For this setup, we just need to disable notifications.

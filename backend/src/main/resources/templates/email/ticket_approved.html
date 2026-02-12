@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Approved</title>
+</head>
+<body>
+    <h2>Ticket Approved - Action Required</h2>
+    <p>Hello IT Support,</p>
+    <p>The following ticket has been approved by the manager and requires your attention:</p>
+    <ul>
+        <li><strong>Ticket ID:</strong> <span th:text="${ticketId}">123</span></li>
+        <li><strong>Title:</strong> <span th:text="${title}">Issue Title</span></li>
+        <li><strong>Approver:</strong> <span th:text="${managerName}">Manager Name</span></li>
+        <li><strong>Requester:</strong> <span th:text="${employeeName}">Employee Name</span></li>
+    </ul>
+    <p>Please take ownership and begin work.</p>
+    <br/>
+    <p>Best Regards,<br/>GSG IT Management</p>
+</body>
+</html>

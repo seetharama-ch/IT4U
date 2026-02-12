@@ -1,0 +1,173 @@
+services:
+  postgres:
+    image: ${POSTGRES_IMAGE}
+    container_name: it4u-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - it4u_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}" ]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    networks:
+      - it4u_net
+
+  it4u-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: it4u-backend
+    environment:
+      # Spring Boot DataSource (Standard Variables)
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_DATASOURCE_URL: jdbc:postgresql://it4u-postgres:5432/it4u
+      SPRING_DATASOURCE_USERNAME: it4u_user
+      SPRING_DATASOURCE_PASSWORD: Geosoft@1234
+
+      # HikariCP - Fail fast (using correct property names)
+      SPRING_DATASOURCE_HIKARI_INITIALIZATION-FAIL-TIMEOUT: 10000
+      SPRING_DATASOURCE_HIKARI_CONNECTION-TIMEOUT: 10000
+      SPRING_DATASOURCE_HIKARI_VALIDATION-TIMEOUT: 5000
+      SPRING_DATASOURCE_HIKARI_MAXIMUM-POOL-SIZE: 5
+
+      # Logging for diagnosis
+      LOGGING_LEVEL_COM_ZAXXER_HIKARI: DEBUG
+      LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_JDBC: DEBUG
+
+      # Application Settings
+      APP_PUBLIC_URL: ${APP_PUBLIC_URL}
+      AUTH_MODE: ${AUTH_MODE}
+      ATTACHMENTS_PATH: ${ATTACHMENTS_PATH}
+
+      # Mail and Notifications
+      IT4U_MAIL_ENABLED: "false"
+      NOTIFICATIONS_EMAIL_ENABLED: "false"
+
+      # Java Options
+      JAVA_OPTS: ${JAVA_OPTS}
+
+      # Azure Auth (Required even if mode is local)
+      AZURE_TENANT_ID: ${AZURE_TENANT_ID}
+      AZURE_CLIENT_ID: ${AZURE_CLIENT_ID}
+      AZURE_CLIENT_SECRET: ${AZURE_CLIENT_SECRET}
+      MAIL_PASSWORD: "dummy_password"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: [ "CMD-SHELL", "wget -qO- http://localhost:8060/actuator/health | grep UP || exit 1" ]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+    ports:
+      - "${BACKEND_PORT}:8060"
+    volumes:
+      - it4u_attachments:${ATTACHMENTS_PATH}
+    networks:
+      - it4u_net
+    restart: unless-stopped
+
+  it4u-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: it4u-frontend
+    depends_on:
+      - it4u-backend
+    ports:
+      - "8086:80"
+    networks:
+      - it4u_net
+    healthcheck:
+      test: [ "CMD-SHELL", "wget -qO- http://localhost:80/ >/dev/null 2>&1 || exit 1" ]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+    restart: unless-stopped
+
+  # =========================
+  # NETPULSE STACK
+  # =========================
+  netpulse-postgres:
+    image: postgres:15-alpine
+    container_name: netpulse-postgres
+    dns:
+      - 192.168.30.5
+    dns_search:
+      - gsg.in
+    environment:
+      POSTGRES_DB: netpulse_prod
+      POSTGRES_USER: netpulse
+      POSTGRES_PASSWORD: netpulse123
+    ports:
+      - "5434:5432" # avoid clash with IT4U
+    volumes:
+      - netpulse_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U netpulse -d netpulse" ]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+    networks:
+      - netpulse_net
+    restart: unless-stopped
+
+  netpulse-backend:
+    build:
+      context: ../NetPluse
+      dockerfile: backend/Dockerfile
+    container_name: netpulse-backend
+    depends_on:
+      netpulse-postgres:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://netpulse-postgres:5432/netpulse
+      SPRING_DATASOURCE_USERNAME: netpulse
+      SPRING_DATASOURCE_PASSWORD: netpulse123
+      SERVER_PORT: 9090
+      SPRING_PROFILES_ACTIVE: docker
+
+      # Disable security for Docker development
+      NETPULSE_SECURITY_ENABLED: "false"
+      SECURITY_ENABLED: "false"
+      JWT_ENABLED: "false"
+      SPRING_SECURITY_ENABLED: "false"
+
+      # Debug logging to find JWT filter
+      LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_SECURITY: INFO
+    ports:
+      - "9090:9090"
+    networks:
+      - netpulse_net
+    restart: unless-stopped
+
+  netpulse-frontend:
+    build:
+      context: ../NetPluse/frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_AUTH_MODE: none
+    container_name: netpulse-frontend
+    depends_on:
+      - netpulse-backend
+    ports:
+      - "9092:80"
+    networks:
+      - netpulse_net
+    restart: unless-stopped
+
+networks:
+  it4u_net:
+  netpulse_net:
+
+
+volumes:
+  it4u_pgdata:
+  it4u_attachments:
+  netpulse_pgdata:

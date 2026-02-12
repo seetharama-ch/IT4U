@@ -1,0 +1,19 @@
+cd "D:\Workspace\gsg-IT4U"
+.\deploy_prod.ps1
+
+cd "D:\Workspace\gsg-IT4U\backend"
+java -jar target\it4u-1.2.0.jar --spring.profiles.active=prod
+
+
+
+-----------------------------------------------------------------------------
+cd "D:\Workspace\gsg-IT4U\backend"
+
+# Auto detect latest JAR in /target
+$latestJar = Get-ChildItem "target\it4u-*.jar" |
+    Where-Object { $_.Name -notlike "*.original" } |
+    Sort-Object LastWriteTime -Descending |
+    Select-Object -First 1
+
+# Run it
+java -jar $latestJar.FullName --spring.profiles.active=prod
